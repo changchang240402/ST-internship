@@ -1,0 +1,53 @@
+version: '3.7'
+
+networks:
+  backend:
+    driver: bridge
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile  # Use the Dockerfile you created
+    container_name: laravel_nginx
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ".:/var/www/html"
+      - "./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf"
+    networks:
+      - backend
+    depends_on:
+      - php
+
+  mysql:
+    image: mysql:5.7
+    container_name: laravel_mysql
+    ports:
+      - "3386:3306"
+    volumes:
+      - "mysql-vol:/var/lib/mysql"
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: laravel
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+    networks:
+      - backend
+
+  php:
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    container_name: laravel_php
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - backend
+
+volumes:
+  mysql-vol:

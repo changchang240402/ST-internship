@@ -1,0 +1,69 @@
+version: '3.7'
+volumes:
+  minio-store:
+  redis-store:
+  
+services:
+  # image project
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - redis
+    networks:
+      - laravel
+    environment:
+      - AWS_ACCESS_KEY_ID=${MINIO_ACCESS_KEY}
+      - AWS_SECRET_ACCESS_KEY=${MINIO_SECRET_KEY}
+      - AWS_DEFAULT_REGION=us-east-1
+      - AWS_BUCKET=laravel-local
+      - AWS_ENDPOINT=http://localhost:9000
+
+  # db mysql
+  db:
+    image: mysql:5.7.22
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: laravel
+      MYSQL_ROOT_PASSWORD: some_password
+      MYSQL_PASSWORD: some_password
+      MYSQL_USER: root
+    volumes:
+      - ./.docker/mysql/dbdata:/var/lib/mysql
+    ports:
+      - '3388:3306'
+    networks:
+      - laravel
+
+  redis:
+    image: redis:6.2-alpine
+    volumes:
+      - type: volume
+        source: redis-store
+        target: /data
+        volume:
+          nocopy: true
+  minio:
+    image: minio/minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - type: volume
+        source: minio-store
+        target: /data
+        volume:
+          nocopy: true
+    environment:
+      MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
+      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
+    command: server /data
+
+networks:
+  laravel:
+    driver: bridge

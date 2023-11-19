@@ -1,0 +1,56 @@
+version: "3.8"
+services:
+  app:
+    build: 
+      args: 
+        user: dean
+        uid: 1001
+      context: ./.docker
+      dockerfile: Dockerfile
+    container_name: laravelapp-app
+    restart: unless-stopped
+    volumes:
+      - .:/var/www # Mount source code vào thư mục /var/www trong container
+    networks:
+      - laravelapp
+      
+  db:
+    image: mysql:8.1
+    container_name: laravel-db  
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: 'lara_db'
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_PASSWORD: 'lara_password'
+      MYSQL_USER: 'lara_user'
+    volumes:
+      - ./db/mysql:/var/lib/mysql # Mount data MySQL vào thư mục /var/lib/mysql trong container
+      - ./.docker/mysql/my.cnf:/etc/mysql/my.cnf
+    networks:
+      - laravelapp
+
+  nginx:
+    image: nginx:1.25.2-alpine
+    container_name: laravel-nginx
+    restart: unless-stopped
+    ports:
+      - 8008:81 # Chuyển cổng 80 trong container thành cổng 8008 trên host
+    volumes:
+      - .:/var/www  # Mount source code vào thư mục /var/www trong container
+      - ./.docker/nginx:/etc/nginx/conf.d
+    networks:
+      - laravelapp
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: laravel-phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "8080:80"  # Cổng truy cập
+    environment:
+      PMA_HOST: db  # Kết nối đến dịch vụ MySQL trong Docker Compose
+    networks:
+      - laravelapp  
+networks: 
+  laravelapp:
+    driver: bridge

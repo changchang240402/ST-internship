@@ -1,0 +1,72 @@
+version: "3.7"
+services: 
+
+  laravel:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    container_name: docker_project
+    image: php:8.2-fpm
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./laravel:/var/www
+    networks:
+      - dockerproject
+  nginx: 
+    image: nginx:alpine
+    container_name: docker_project_nginx
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+      - "443:443"
+    volumes:
+      - ./laravel:/var/www
+      - ./nginx:/etc/nginx/conf.d/
+    networks:
+      - dockerproject
+  db:
+    image: mysql:8.0
+    container_name: docker_project_db
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: laravel
+      MYSQL_ROOT_PASSWORD: admin123
+      MYSQL_PASSWORD: admin123
+      MYSQL_USER: admin
+      SERVICE_TAGS: dev 
+      SERVICE_NAME: mysql
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - dockerproject
+  redis:
+    image: redis:4.0
+    container_name: docker_project_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - dockerproject
+  minio:
+    image: minio/minio
+    container_name: docker_project_minio
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - ./minio_data:/data 
+    environment:
+      MINIO_ROOT_USER: admin1234
+      MINIO_ROOT_PASSWORD: admin1234
+    command: server --console-address ":9001" /data
+    networks:
+      - dockerproject
+networks:
+  dockerproject:
+    driver: bridge
+volumes:
+  dbdata:

@@ -1,0 +1,26 @@
+{
+    "name": "phucchp/be-intern-2023-labs",
+    "autoload": {
+        "psr-4": {
+            "Phucchp\\BeIntern2023Labs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "phucchp",
+            "email": "phuc.cao@supremetech.vn"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "10.2.7"
+    },
+    "require": {
+        "guzzlehttp/guzzle": ">=7.5.0 <7.6.0",
+        "fzaninotto/faker": "<1.21.0"
+    },
+    "config": {
+        "gitignore": {
+            "vendor/": true
+        }
+    }
+}

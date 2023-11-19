@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+  laravel:
+    build:
+      context: .
+      dockerfile: laravel.Dockerfile
+    container_name: docker-laravel
+    working_dir: /var/www
+    volumes:
+      - ./laravel:/var/www
+    
+  nginx:
+    build:
+      dockerfile: nginx.Dockerfile
+    container_name: docker-nginx
+    volumes:
+      - ./laravel:/var/www
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - type: bind
+        source: ./laravel
+        target: /var/www
+    ports:
+      - "80:80"
+    
+  redis:
+    image: redis:7.2.0-alpine
+    container_name: docker-redis
+    ports:
+      - "6379:6379"
+
+  mysql:
+    image: mysql
+    container_name: mysql
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: laravel
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin123
+      MYSQL_ROOT_PASSWORD: admin123
+
+  minio:
+    image: bitnami/minio:latest
+    container_name: docker-minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"

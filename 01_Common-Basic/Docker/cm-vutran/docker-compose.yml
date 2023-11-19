@@ -1,0 +1,74 @@
+version: '3'
+
+services:
+  #build php
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www/
+    networks:
+      - project
+
+  #build nginx with ubuntu
+  nginx-custom:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "${NGINX_PORT}:80"
+    volumes:
+      - ./:/var/www/
+      - ./nginx/:/etc/nginx/conf.d/
+    networks:
+      - project
+
+  #build minio, pull from docker hub
+  minio:
+    image: minio/minio
+    container_name: minio2
+    ports:
+      - "${MINIO_DATA_PORT}:9000"
+      - "${MINIO_ADMIN_PORT}:9001"
+    volumes:
+      - ./storage:/data
+    environment:
+      MINIO_ROOT_USER: ${MINIO_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_PASSWORD}
+    command: server --console-address ":9001" /data
+
+  #build redis, pull from docker hub
+  redis:
+    image: redis:latest
+    container_name: redis_app
+    ports:
+      - "${REDIS_PORT}:6379"
+    networks:
+      - project
+
+  #build mysql, pull from docker hub
+  db:
+    image: mysql
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE: ${MYSQL_DATABASE}
+      - MYSQL_USER: 
+      - MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "${MYSQL_PORT}:3306"
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+    networks:
+      - project
+
+volumes:
+  storage: {}
+  mysql-data:
+
+networks:
+  project:
+    driver: bridge

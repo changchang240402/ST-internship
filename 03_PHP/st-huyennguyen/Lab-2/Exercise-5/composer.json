@@ -1,0 +1,21 @@
+{
+    "name": "camhuyen/exercise-5",
+    "autoload": {
+        "psr-4": {
+            "Camhuyen\\Exercise5\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "st-huyennguyen",
+            "email": "huyen.nguyen@supremetech.vn"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~7.5.0",
+        "fakerphp/faker": "<1.21.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.2.7"
+    }
+}

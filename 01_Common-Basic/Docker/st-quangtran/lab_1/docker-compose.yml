@@ -1,0 +1,72 @@
+version: "3.7"
+
+services:
+  # image project
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    container_name: laravel-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./src:/var/www
+    depends_on:
+      - redis
+    networks:
+      - laravel
+
+  # nginx
+  nginx:
+    build: 
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - ./src:/var/www
+      - ./docker/nginx/:/etc/nginx/conf.d/
+    networks:
+        - laravel
+
+  # db mysql
+  db:
+    image: mysql:5.7.22
+    container_name: mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+    volumes:
+      - mysql:/var/lib/mysql
+    ports:
+      - "3388:3306"
+    networks:
+      - laravel
+  # redis
+  redis:
+    image: redis:latest
+    networks:
+      - laravel
+    ports:
+      - "6379:6379"
+  #Minio
+  minio:
+    image: 'bitnami/minio:latest'
+    ports:
+      - '9000:9000'
+      - '9001:9001'
+    environment:
+      - MINIO_ROOT_USER=duyquang
+      - MINIO_ROOT_PASSWORD=duyquang
+    networks:
+      - laravel
+networks:
+  laravel:
+    driver: bridge
+volumes:
+  mysql:
+    driver: local

@@ -1,0 +1,16 @@
+# Ignore vendor and node modules
+/vendor/
+/node_modules/
+
+# Ignore Laravel-specific files
+/.env
+/artisan
+/bootstrap/
+/storage/
+/public/hot
+/public/storage
+
+# Ignore database files
+db/
+
+

@@ -1,0 +1,22 @@
+{
+    "name": "quangtran/bai5",
+    "description": "Create composer example",
+    "autoload": {
+        "psr-4": {
+            "Quangtran\\Bai5\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "st-quangtran2",
+            "email": "quang.tran2@supremetech.vn"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~7.5.0",
+        "fakerphp/faker": "<1.21.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.2.7"
+    }
+}

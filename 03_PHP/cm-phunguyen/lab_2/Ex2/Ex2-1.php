@@ -1,0 +1,21 @@
+<?php
+function fileHandling($fileName)
+{
+    $headerContain = "Introduce Myself";
+    $content =
+        "Thank you for giving me the opportunity to be interviewed in this position. My name is Phu. I have 
+    studied at Da Nang University of Science and Technology, my major is Information Technology. I’m a 
+    strong team worker, excellent communicator, good at troubleshooting and resolving programming 
+    issues. During my college years, I have gained some valuable experiences that will enable me to excel in 
+    this role. I have worked on 5 small projects on the university. I have consistently completed all my 
+    sections in my role, and I have always taken part in teams discussion and communication. As a member 
+    of  a team, I know that it is important to not only work hard in my role but also support to other 
+    members in a team, and be a positive model for the company. I am excited to bring my skills and passion 
+    to contribute to your company's BackEnd team. Thank you once again for considering me for this 
+    position";
+    $introduceFile = fopen($fileName, "w") or die("Unable to open file!");
+    fwrite($introduceFile, $headerContain);
+    fwrite($introduceFile, $content);
+    fclose($introduceFile);
+}
+fileHandling('myprofile.txt');

@@ -1,0 +1,18 @@
+version: '3'
+services:
+  database:
+    image: mysql:8.1.0
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin123
+      MYSQL_DATABASE: sales
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysqldb:/var/lib/mysql
+
+volumes:
+  mysqldb:
