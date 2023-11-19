@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app/Http/Controllers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../_css/bootstrap.min.css?v=10.1.5" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css?v=10.1.5" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css?v=10.1.5" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Http</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Controllers</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Api/HistoryController.php.html#9">App\Http\Controllers\Api\HistoryController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/KanbanFilterController.php.html#12">App\Http\Controllers\Api\KanbanFilterController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AttachmentController.php.html#8">App\Http\Controllers\AttachmentController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KanbanController.php.html#17">App\Http\Controllers\KanbanController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#17">App\Http\Controllers\LoginController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectController.php.html#11">App\Http\Controllers\ProjectController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#19">App\Http\Controllers\ProjectMemberController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegistrationController.php.html#10">App\Http\Controllers\RegistrationController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#20">App\Http\Controllers\UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IssueController.php.html#22">App\Http\Controllers\IssueController</a></td><td class="text-right">70%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="UserController.php.html#20">App\Http\Controllers\UserController</a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="ProjectController.php.html#11">App\Http\Controllers\ProjectController</a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#19">App\Http\Controllers\ProjectMemberController</a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="LoginController.php.html#17">App\Http\Controllers\LoginController</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="IssueController.php.html#22">App\Http\Controllers\IssueController</a></td><td class="text-right">46</td></tr>
+       <tr><td><a href="KanbanController.php.html#17">App\Http\Controllers\KanbanController</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="RegistrationController.php.html#10">App\Http\Controllers\RegistrationController</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Api/HistoryController.php.html#9">App\Http\Controllers\Api\HistoryController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Api/KanbanFilterController.php.html#12">App\Http\Controllers\Api\KanbanFilterController</a></td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Api/HistoryController.php.html#18"><abbr title="App\Http\Controllers\Api\HistoryController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/HistoryController.php.html#30"><abbr title="App\Http\Controllers\Api\HistoryController::history">history</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/KanbanFilterController.php.html#24"><abbr title="App\Http\Controllers\Api\KanbanFilterController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/KanbanFilterController.php.html#38"><abbr title="App\Http\Controllers\Api\KanbanFilterController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AttachmentController.php.html#13"><abbr title="App\Http\Controllers\AttachmentController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AttachmentController.php.html#21"><abbr title="App\Http\Controllers\AttachmentController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AttachmentController.php.html#29"><abbr title="App\Http\Controllers\AttachmentController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AttachmentController.php.html#37"><abbr title="App\Http\Controllers\AttachmentController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AttachmentController.php.html#45"><abbr title="App\Http\Controllers\AttachmentController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AttachmentController.php.html#53"><abbr title="App\Http\Controllers\AttachmentController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AttachmentController.php.html#61"><abbr title="App\Http\Controllers\AttachmentController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IssueController.php.html#242"><abbr title="App\Http\Controllers\IssueController::filter">filter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IssueController.php.html#263"><abbr title="App\Http\Controllers\IssueController::updatePartials">updatePartials</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KanbanController.php.html#29"><abbr title="App\Http\Controllers\KanbanController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KanbanController.php.html#42"><abbr title="App\Http\Controllers\KanbanController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KanbanController.php.html#64"><abbr title="App\Http\Controllers\KanbanController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#24"><abbr title="App\Http\Controllers\LoginController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#32"><abbr title="App\Http\Controllers\LoginController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#43"><abbr title="App\Http\Controllers\LoginController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#52"><abbr title="App\Http\Controllers\LoginController::logout">logout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#65"><abbr title="App\Http\Controllers\LoginController::forgotPassword">forgotPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#78"><abbr title="App\Http\Controllers\LoginController::postForgotPassword">postForgotPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#97"><abbr title="App\Http\Controllers\LoginController::passwordReset">passwordReset</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#107"><abbr title="App\Http\Controllers\LoginController::passwordResetUpdate">passwordResetUpdate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectController.php.html#23"><abbr title="App\Http\Controllers\ProjectController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectController.php.html#34"><abbr title="App\Http\Controllers\ProjectController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectController.php.html#48"><abbr title="App\Http\Controllers\ProjectController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectController.php.html#60"><abbr title="App\Http\Controllers\ProjectController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectController.php.html#81"><abbr title="App\Http\Controllers\ProjectController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectController.php.html#95"><abbr title="App\Http\Controllers\ProjectController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectController.php.html#110"><abbr title="App\Http\Controllers\ProjectController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectController.php.html#136"><abbr title="App\Http\Controllers\ProjectController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#27"><abbr title="App\Http\Controllers\ProjectMemberController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#35"><abbr title="App\Http\Controllers\ProjectMemberController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#48"><abbr title="App\Http\Controllers\ProjectMemberController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#72"><abbr title="App\Http\Controllers\ProjectMemberController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#87"><abbr title="App\Http\Controllers\ProjectMemberController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#107"><abbr title="App\Http\Controllers\ProjectMemberController::memberAcceptInvitation">memberAcceptInvitation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#132"><abbr title="App\Http\Controllers\ProjectMemberController::resendInvitation">resendInvitation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegistrationController.php.html#17"><abbr title="App\Http\Controllers\RegistrationController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegistrationController.php.html#25"><abbr title="App\Http\Controllers\RegistrationController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegistrationController.php.html#33"><abbr title="App\Http\Controllers\RegistrationController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#37"><abbr title="App\Http\Controllers\UserController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#50"><abbr title="App\Http\Controllers\UserController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#58"><abbr title="App\Http\Controllers\UserController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#66"><abbr title="App\Http\Controllers\UserController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#74"><abbr title="App\Http\Controllers\UserController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#82"><abbr title="App\Http\Controllers\UserController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#90"><abbr title="App\Http\Controllers\UserController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#109"><abbr title="App\Http\Controllers\UserController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#121"><abbr title="App\Http\Controllers\UserController::accountInviteCreation">accountInviteCreation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#140"><abbr title="App\Http\Controllers\UserController::postAccountInviteCreation">postAccountInviteCreation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#168"><abbr title="App\Http\Controllers\UserController::verificationSend">verificationSend</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#184"><abbr title="App\Http\Controllers\UserController::verificationNotice">verificationNotice</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#193"><abbr title="App\Http\Controllers\UserController::verificationVerify">verificationVerify</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#206"><abbr title="App\Http\Controllers\UserController::closeVerificationDialog">closeVerificationDialog</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ProjectMemberController.php.html#107"><abbr title="App\Http\Controllers\ProjectMemberController::memberAcceptInvitation">memberAcceptInvitation</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="UserController.php.html#90"><abbr title="App\Http\Controllers\UserController::update">update</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="IssueController.php.html#263"><abbr title="App\Http\Controllers\IssueController::updatePartials">updatePartials</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="KanbanController.php.html#42"><abbr title="App\Http\Controllers\KanbanController::index">index</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="LoginController.php.html#78"><abbr title="App\Http\Controllers\LoginController::postForgotPassword">postForgotPassword</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ProjectController.php.html#60"><abbr title="App\Http\Controllers\ProjectController::store">store</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ProjectController.php.html#110"><abbr title="App\Http\Controllers\ProjectController::update">update</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#87"><abbr title="App\Http\Controllers\ProjectMemberController::destroy">destroy</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Api/HistoryController.php.html#30"><abbr title="App\Http\Controllers\Api\HistoryController::history">history</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Api/KanbanFilterController.php.html#38"><abbr title="App\Http\Controllers\Api\KanbanFilterController::index">index</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="IssueController.php.html#242"><abbr title="App\Http\Controllers\IssueController::filter">filter</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="KanbanController.php.html#64"><abbr title="App\Http\Controllers\KanbanController::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="LoginController.php.html#32"><abbr title="App\Http\Controllers\LoginController::index">index</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="LoginController.php.html#43"><abbr title="App\Http\Controllers\LoginController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="LoginController.php.html#107"><abbr title="App\Http\Controllers\LoginController::passwordResetUpdate">passwordResetUpdate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ProjectController.php.html#81"><abbr title="App\Http\Controllers\ProjectController::destroy">destroy</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ProjectController.php.html#95"><abbr title="App\Http\Controllers\ProjectController::edit">edit</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ProjectController.php.html#136"><abbr title="App\Http\Controllers\ProjectController::show">show</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#48"><abbr title="App\Http\Controllers\ProjectMemberController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#72"><abbr title="App\Http\Controllers\ProjectMemberController::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ProjectMemberController.php.html#132"><abbr title="App\Http\Controllers\ProjectMemberController::resendInvitation">resendInvitation</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="RegistrationController.php.html#33"><abbr title="App\Http\Controllers\RegistrationController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UserController.php.html#121"><abbr title="App\Http\Controllers\UserController::accountInviteCreation">accountInviteCreation</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UserController.php.html#140"><abbr title="App\Http\Controllers\UserController::postAccountInviteCreation">postAccountInviteCreation</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 10.1.5</a> using <a href="https://www.php.net/" target="_top">PHP 8.2.12</a> and <a href="https://phpunit.de/">PHPUnit 10.3.5</a> at Mon Nov 13 4:29:19 UTC 2023.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../_js/jquery.min.js?v=10.1.5" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js?v=10.1.5" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js?v=10.1.5" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([9,0,0,0,0,0,0,0,1,0,0,3], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([56,0,0,0,0,0,0,0,0,0,0,20], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,16,"<a href=\"Api\/AttachmentController.php.html#14\">App\\Http\\Controllers\\Api\\AttachmentController<\/a>"],[0,3,"<a href=\"Api\/HistoryController.php.html#9\">App\\Http\\Controllers\\Api\\HistoryController<\/a>"],[0,3,"<a href=\"Api\/KanbanFilterController.php.html#12\">App\\Http\\Controllers\\Api\\KanbanFilterController<\/a>"],[0,7,"<a href=\"AttachmentController.php.html#8\">App\\Http\\Controllers\\AttachmentController<\/a>"],[100,13,"<a href=\"CommentController.php.html#23\">App\\Http\\Controllers\\CommentController<\/a>"],[100,0,"<a href=\"Controller.php.html#9\">App\\Http\\Controllers\\Controller<\/a>"],[70,27,"<a href=\"IssueController.php.html#22\">App\\Http\\Controllers\\IssueController<\/a>"],[0,6,"<a href=\"KanbanController.php.html#17\">App\\Http\\Controllers\\KanbanController<\/a>"],[0,13,"<a href=\"LoginController.php.html#17\">App\\Http\\Controllers\\LoginController<\/a>"],[0,15,"<a href=\"ProjectController.php.html#11\">App\\Http\\Controllers\\ProjectController<\/a>"],[0,15,"<a href=\"ProjectMemberController.php.html#19\">App\\Http\\Controllers\\ProjectMemberController<\/a>"],[0,4,"<a href=\"RegistrationController.php.html#10\">App\\Http\\Controllers\\RegistrationController<\/a>"],[0,19,"<a href=\"UserController.php.html#20\">App\\Http\\Controllers\\UserController<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Api\/AttachmentController.php.html#26\">App\\Http\\Controllers\\Api\\AttachmentController::__construct<\/a>"],[100,6,"<a href=\"Api\/AttachmentController.php.html#39\">App\\Http\\Controllers\\Api\\AttachmentController::attachment<\/a>"],[100,3,"<a href=\"Api\/AttachmentController.php.html#75\">App\\Http\\Controllers\\Api\\AttachmentController::upload<\/a>"],[100,2,"<a href=\"Api\/AttachmentController.php.html#114\">App\\Http\\Controllers\\Api\\AttachmentController::delete<\/a>"],[100,2,"<a href=\"Api\/AttachmentController.php.html#135\">App\\Http\\Controllers\\Api\\AttachmentController::download<\/a>"],[100,2,"<a href=\"Api\/AttachmentController.php.html#154\">App\\Http\\Controllers\\Api\\AttachmentController::show<\/a>"],[0,1,"<a href=\"Api\/HistoryController.php.html#18\">App\\Http\\Controllers\\Api\\HistoryController::__construct<\/a>"],[0,2,"<a href=\"Api\/HistoryController.php.html#30\">App\\Http\\Controllers\\Api\\HistoryController::history<\/a>"],[0,1,"<a href=\"Api\/KanbanFilterController.php.html#24\">App\\Http\\Controllers\\Api\\KanbanFilterController::__construct<\/a>"],[0,2,"<a href=\"Api\/KanbanFilterController.php.html#38\">App\\Http\\Controllers\\Api\\KanbanFilterController::index<\/a>"],[0,1,"<a href=\"AttachmentController.php.html#13\">App\\Http\\Controllers\\AttachmentController::index<\/a>"],[0,1,"<a href=\"AttachmentController.php.html#21\">App\\Http\\Controllers\\AttachmentController::create<\/a>"],[0,1,"<a href=\"AttachmentController.php.html#29\">App\\Http\\Controllers\\AttachmentController::store<\/a>"],[0,1,"<a href=\"AttachmentController.php.html#37\">App\\Http\\Controllers\\AttachmentController::show<\/a>"],[0,1,"<a href=\"AttachmentController.php.html#45\">App\\Http\\Controllers\\AttachmentController::edit<\/a>"],[0,1,"<a href=\"AttachmentController.php.html#53\">App\\Http\\Controllers\\AttachmentController::update<\/a>"],[0,1,"<a href=\"AttachmentController.php.html#61\">App\\Http\\Controllers\\AttachmentController::destroy<\/a>"],[100,1,"<a href=\"CommentController.php.html#38\">App\\Http\\Controllers\\CommentController::__construct<\/a>"],[100,4,"<a href=\"CommentController.php.html#52\">App\\Http\\Controllers\\CommentController::index<\/a>"],[100,3,"<a href=\"CommentController.php.html#79\">App\\Http\\Controllers\\CommentController::store<\/a>"],[100,2,"<a href=\"CommentController.php.html#106\">App\\Http\\Controllers\\CommentController::update<\/a>"],[100,2,"<a href=\"CommentController.php.html#126\">App\\Http\\Controllers\\CommentController::destroy<\/a>"],[100,1,"<a href=\"CommentController.php.html#143\">App\\Http\\Controllers\\CommentController::createDraftComment<\/a>"],[100,1,"<a href=\"IssueController.php.html#45\">App\\Http\\Controllers\\IssueController::__construct<\/a>"],[100,2,"<a href=\"IssueController.php.html#63\">App\\Http\\Controllers\\IssueController::index<\/a>"],[100,4,"<a href=\"IssueController.php.html#81\">App\\Http\\Controllers\\IssueController::create<\/a>"],[100,2,"<a href=\"IssueController.php.html#109\">App\\Http\\Controllers\\IssueController::store<\/a>"],[100,3,"<a href=\"IssueController.php.html#131\">App\\Http\\Controllers\\IssueController::show<\/a>"],[100,3,"<a href=\"IssueController.php.html#160\">App\\Http\\Controllers\\IssueController::edit<\/a>"],[100,3,"<a href=\"IssueController.php.html#185\">App\\Http\\Controllers\\IssueController::update<\/a>"],[100,4,"<a href=\"IssueController.php.html#214\">App\\Http\\Controllers\\IssueController::destroy<\/a>"],[0,2,"<a href=\"IssueController.php.html#242\">App\\Http\\Controllers\\IssueController::filter<\/a>"],[0,3,"<a href=\"IssueController.php.html#263\">App\\Http\\Controllers\\IssueController::updatePartials<\/a>"],[0,1,"<a href=\"KanbanController.php.html#29\">App\\Http\\Controllers\\KanbanController::__construct<\/a>"],[0,3,"<a href=\"KanbanController.php.html#42\">App\\Http\\Controllers\\KanbanController::index<\/a>"],[0,2,"<a href=\"KanbanController.php.html#64\">App\\Http\\Controllers\\KanbanController::update<\/a>"],[0,1,"<a href=\"LoginController.php.html#24\">App\\Http\\Controllers\\LoginController::__construct<\/a>"],[0,2,"<a href=\"LoginController.php.html#32\">App\\Http\\Controllers\\LoginController::index<\/a>"],[0,2,"<a href=\"LoginController.php.html#43\">App\\Http\\Controllers\\LoginController::store<\/a>"],[0,1,"<a href=\"LoginController.php.html#52\">App\\Http\\Controllers\\LoginController::logout<\/a>"],[0,1,"<a href=\"LoginController.php.html#65\">App\\Http\\Controllers\\LoginController::forgotPassword<\/a>"],[0,3,"<a href=\"LoginController.php.html#78\">App\\Http\\Controllers\\LoginController::postForgotPassword<\/a>"],[0,1,"<a href=\"LoginController.php.html#97\">App\\Http\\Controllers\\LoginController::passwordReset<\/a>"],[0,2,"<a href=\"LoginController.php.html#107\">App\\Http\\Controllers\\LoginController::passwordResetUpdate<\/a>"],[0,1,"<a href=\"ProjectController.php.html#23\">App\\Http\\Controllers\\ProjectController::__construct<\/a>"],[0,1,"<a href=\"ProjectController.php.html#34\">App\\Http\\Controllers\\ProjectController::index<\/a>"],[0,1,"<a href=\"ProjectController.php.html#48\">App\\Http\\Controllers\\ProjectController::create<\/a>"],[0,3,"<a href=\"ProjectController.php.html#60\">App\\Http\\Controllers\\ProjectController::store<\/a>"],[0,2,"<a href=\"ProjectController.php.html#81\">App\\Http\\Controllers\\ProjectController::destroy<\/a>"],[0,2,"<a href=\"ProjectController.php.html#95\">App\\Http\\Controllers\\ProjectController::edit<\/a>"],[0,3,"<a href=\"ProjectController.php.html#110\">App\\Http\\Controllers\\ProjectController::update<\/a>"],[0,2,"<a href=\"ProjectController.php.html#136\">App\\Http\\Controllers\\ProjectController::show<\/a>"],[0,1,"<a href=\"ProjectMemberController.php.html#27\">App\\Http\\Controllers\\ProjectMemberController::__construct<\/a>"],[0,1,"<a href=\"ProjectMemberController.php.html#35\">App\\Http\\Controllers\\ProjectMemberController::index<\/a>"],[0,2,"<a href=\"ProjectMemberController.php.html#48\">App\\Http\\Controllers\\ProjectMemberController::store<\/a>"],[0,2,"<a href=\"ProjectMemberController.php.html#72\">App\\Http\\Controllers\\ProjectMemberController::update<\/a>"],[0,3,"<a href=\"ProjectMemberController.php.html#87\">App\\Http\\Controllers\\ProjectMemberController::destroy<\/a>"],[0,4,"<a href=\"ProjectMemberController.php.html#107\">App\\Http\\Controllers\\ProjectMemberController::memberAcceptInvitation<\/a>"],[0,2,"<a href=\"ProjectMemberController.php.html#132\">App\\Http\\Controllers\\ProjectMemberController::resendInvitation<\/a>"],[0,1,"<a href=\"RegistrationController.php.html#17\">App\\Http\\Controllers\\RegistrationController::__construct<\/a>"],[0,1,"<a href=\"RegistrationController.php.html#25\">App\\Http\\Controllers\\RegistrationController::index<\/a>"],[0,2,"<a href=\"RegistrationController.php.html#33\">App\\Http\\Controllers\\RegistrationController::store<\/a>"],[0,1,"<a href=\"UserController.php.html#37\">App\\Http\\Controllers\\UserController::__construct<\/a>"],[0,1,"<a href=\"UserController.php.html#50\">App\\Http\\Controllers\\UserController::index<\/a>"],[0,1,"<a href=\"UserController.php.html#58\">App\\Http\\Controllers\\UserController::create<\/a>"],[0,1,"<a href=\"UserController.php.html#66\">App\\Http\\Controllers\\UserController::store<\/a>"],[0,1,"<a href=\"UserController.php.html#74\">App\\Http\\Controllers\\UserController::show<\/a>"],[0,1,"<a href=\"UserController.php.html#82\">App\\Http\\Controllers\\UserController::edit<\/a>"],[0,4,"<a href=\"UserController.php.html#90\">App\\Http\\Controllers\\UserController::update<\/a>"],[0,1,"<a href=\"UserController.php.html#109\">App\\Http\\Controllers\\UserController::destroy<\/a>"],[0,2,"<a href=\"UserController.php.html#121\">App\\Http\\Controllers\\UserController::accountInviteCreation<\/a>"],[0,2,"<a href=\"UserController.php.html#140\">App\\Http\\Controllers\\UserController::postAccountInviteCreation<\/a>"],[0,1,"<a href=\"UserController.php.html#168\">App\\Http\\Controllers\\UserController::verificationSend<\/a>"],[0,1,"<a href=\"UserController.php.html#184\">App\\Http\\Controllers\\UserController::verificationNotice<\/a>"],[0,1,"<a href=\"UserController.php.html#193\">App\\Http\\Controllers\\UserController::verificationVerify<\/a>"],[0,1,"<a href=\"UserController.php.html#206\">App\\Http\\Controllers\\UserController::closeVerificationDialog<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

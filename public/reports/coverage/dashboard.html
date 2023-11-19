@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=10.1.5" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=10.1.5" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=10.1.5" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Commands/SendEmailIssue.php.html#13">App\Console\Commands\SendEmailIssue</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/SendEmailIssueLate.php.html#13">App\Console\Commands\SendEmailIssueLate</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/HistoryController.php.html#9">App\Http\Controllers\Api\HistoryController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/KanbanFilterController.php.html#12">App\Http\Controllers\Api\KanbanFilterController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AttachmentController.php.html#8">App\Http\Controllers\AttachmentController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/KanbanController.php.html#17">App\Http\Controllers\KanbanController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#17">App\Http\Controllers\LoginController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#11">App\Http\Controllers\ProjectController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#19">App\Http\Controllers\ProjectMemberController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/RegistrationController.php.html#10">App\Http\Controllers\RegistrationController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#20">App\Http\Controllers\UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#8">App\Http\Middleware\Authenticate</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/ProjectRoleAccessMiddleware.php.html#12">App\Http\Middleware\ProjectRoleAccessMiddleware</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#11">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#7">App\Http\Middleware\TrustHosts</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/AddMemberRequest.php.html#9">App\Http\Requests\AddMemberRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Comment/StoreDraftCommentRequest.php.html#7">App\Http\Requests\Comment\StoreDraftCommentRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/DeleteMemberRequest.php.html#8">App\Http\Requests\DeleteMemberRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/EditMemberRoleRequest.php.html#9">App\Http\Requests\EditMemberRoleRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/InviteAcceptRequest.php.html#7">App\Http\Requests\InviteAcceptRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/InviteUserCreateRequest.php.html#7">App\Http\Requests\InviteUserCreateRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Issue/DeleteIssueRequest.php.html#7">App\Http\Requests\Issue\DeleteIssueRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Issue/StoreIssueRequest.php.html#7">App\Http\Requests\Issue\StoreIssueRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Issue/UpdateIssueRequest.php.html#7">App\Http\Requests\Issue\UpdateIssueRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/LoginRequest.php.html#7">App\Http\Requests\LoginRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/PasswordUpdateRequest.php.html#7">App\Http\Requests\PasswordUpdateRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ResetPasswordRequest.php.html#7">App\Http\Requests\ResetPasswordRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreProjectRequest.php.html#7">App\Http\Requests\StoreProjectRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreRegistrationRequest.php.html#7">App\Http\Requests\StoreRegistrationRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateProjectRequest.php.html#8">App\Http\Requests\UpdateProjectRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateUserRequest.php.html#8">App\Http\Requests\UpdateUserRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UserActiveRequest.php.html#7">App\Http\Requests\UserActiveRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/SendEmail.php.html#12">App\Mail\SendEmail</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Attachment.php.html#9">App\Models\Attachment</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/History.php.html#9">App\Models\History</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/ProjectMember.php.html#11">App\Models\ProjectMember</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#13">App\Models\User</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Notifications/ResetPasswordNotification.php.html#11">App\Notifications\ResetPasswordNotification</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Notifications/VerifyEmail.php.html#8">App\Notifications\VerifyEmail</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProjectMemberPolicy.php.html#8">App\Policies\ProjectMemberPolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProjectPolicy.php.html#8">App\Policies\ProjectPolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#8">App\Providers\BroadcastServiceProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Rules/CheckAllowAddRole.php.html#8">App\Rules\CheckAllowAddRole</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Rules/CheckAllowDeleteRole.php.html#8">App\Rules\CheckAllowDeleteRole</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Rules/CheckAllowEditRole.php.html#8">App\Rules\CheckAllowEditRole</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/LoginService.php.html#15">App\Services\LoginService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#9">App\Repositories\Issue\IssueRepository</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#12">App\Services\ProjectService</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#15">App\Services\UserService</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#23">App\Services\ProjectMemberService</a></td><td class="text-right">3%</td></tr>
+       <tr><td><a href="Policies/IssuePolicy.php.html#9">App\Policies\IssuePolicy</a></td><td class="text-right">3%</td></tr>
+       <tr><td><a href="Services/MailService.php.html#9">App\Services\MailService</a></td><td class="text-right">5%</td></tr>
+       <tr><td><a href="Repositories/Project/ProjectRepository.php.html#13">App\Repositories\Project\ProjectRepository</a></td><td class="text-right">5%</td></tr>
+       <tr><td><a href="Repositories/User/UserRepository.php.html#8">App\Repositories\User\UserRepository</a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="Repositories/ProjectMember/MemberRepository.php.html#8">App\Repositories\ProjectMember\MemberRepository</a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#8">App\Exceptions\Handler</a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Models/Issue.php.html#16">App\Models\Issue</a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Console/Kernel.php.html#8">App\Console\Kernel</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Models/Comment.php.html#11">App\Models\Comment</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Repositories/History/HistoryRepository.php.html#8">App\Repositories\History\HistoryRepository</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#10">App\Providers\TelescopeServiceProvider</a></td><td class="text-right">52%</td></tr>
+       <tr><td><a href="Repositories/BaseRepository.php.html#7">App\Repositories\BaseRepository</a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#11">App\Services\AttachmentService</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Models/Project.php.html#11">App\Models\Project</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Controllers/IssueController.php.html#22">App\Http\Controllers\IssueController</a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="Repositories/Comment/CommentRepository.php.html#11">App\Repositories\Comment\CommentRepository</a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="Services/HistoryService.php.html#8">App\Services\HistoryService</a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="Services/IssueService.php.html#10">App\Services\IssueService</a></td><td class="text-right">80%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#9">App\Repositories\Issue\IssueRepository</a></td><td class="text-right">1110</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#20">App\Http\Controllers\UserController</a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#23">App\Services\ProjectMemberService</a></td><td class="text-right">278</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#11">App\Http\Controllers\ProjectController</a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#19">App\Http\Controllers\ProjectMemberController</a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#12">App\Services\ProjectService</a></td><td class="text-right">194</td></tr>
+       <tr><td><a href="Services/UserService.php.html#15">App\Services\UserService</a></td><td class="text-right">194</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#17">App\Http\Controllers\LoginController</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="Policies/IssuePolicy.php.html#9">App\Policies\IssuePolicy</a></td><td class="text-right">119</td></tr>
+       <tr><td><a href="Console/Commands/SendEmailIssueLate.php.html#13">App\Console\Commands\SendEmailIssueLate</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Services/IssueService.php.html#10">App\Services\IssueService</a></td><td class="text-right">59</td></tr>
+       <tr><td><a href="Services/MailService.php.html#9">App\Services\MailService</a></td><td class="text-right">49</td></tr>
+       <tr><td><a href="Repositories/Project/ProjectRepository.php.html#13">App\Repositories\Project\ProjectRepository</a></td><td class="text-right">48</td></tr>
+       <tr><td><a href="Http/Controllers/IssueController.php.html#22">App\Http\Controllers\IssueController</a></td><td class="text-right">46</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#11">App\Services\AttachmentService</a></td><td class="text-right">46</td></tr>
+       <tr><td><a href="Http/Controllers/KanbanController.php.html#17">App\Http\Controllers\KanbanController</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Http/Middleware/ProjectRoleAccessMiddleware.php.html#12">App\Http\Middleware\ProjectRoleAccessMiddleware</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Console/Commands/SendEmailIssue.php.html#13">App\Console\Commands\SendEmailIssue</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Http/Controllers/RegistrationController.php.html#10">App\Http\Controllers\RegistrationController</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#11">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Repositories/BaseRepository.php.html#7">App\Repositories\BaseRepository</a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#10">App\Providers\TelescopeServiceProvider</a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="Http/Controllers/Api/HistoryController.php.html#9">App\Http\Controllers\Api\HistoryController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/KanbanFilterController.php.html#12">App\Http\Controllers\Api\KanbanFilterController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Rules/CheckAllowAddRole.php.html#8">App\Rules\CheckAllowAddRole</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/HistoryService.php.html#8">App\Services\HistoryService</a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#8">App\Http\Middleware\Authenticate</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Rules/CheckAllowDeleteRole.php.html#8">App\Rules\CheckAllowDeleteRole</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Rules/CheckAllowEditRole.php.html#8">App\Rules\CheckAllowEditRole</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#8">App\Exceptions\Handler</a></td><td class="text-right">4</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Commands/SendEmailIssue.php.html#34"><abbr title="App\Console\Commands\SendEmailIssue::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/SendEmailIssueLate.php.html#32"><abbr title="App\Console\Commands\SendEmailIssueLate::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Kernel.php.html#15"><abbr title="App\Console\Kernel::schedule">schedule</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#32"><abbr title="App\Exceptions\Handler::render">render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/HistoryController.php.html#18"><abbr title="App\Http\Controllers\Api\HistoryController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/HistoryController.php.html#30"><abbr title="App\Http\Controllers\Api\HistoryController::history">history</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/KanbanFilterController.php.html#24"><abbr title="App\Http\Controllers\Api\KanbanFilterController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/KanbanFilterController.php.html#38"><abbr title="App\Http\Controllers\Api\KanbanFilterController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AttachmentController.php.html#13"><abbr title="App\Http\Controllers\AttachmentController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AttachmentController.php.html#21"><abbr title="App\Http\Controllers\AttachmentController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AttachmentController.php.html#29"><abbr title="App\Http\Controllers\AttachmentController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AttachmentController.php.html#37"><abbr title="App\Http\Controllers\AttachmentController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AttachmentController.php.html#45"><abbr title="App\Http\Controllers\AttachmentController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AttachmentController.php.html#53"><abbr title="App\Http\Controllers\AttachmentController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AttachmentController.php.html#61"><abbr title="App\Http\Controllers\AttachmentController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/IssueController.php.html#242"><abbr title="App\Http\Controllers\IssueController::filter">filter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/IssueController.php.html#263"><abbr title="App\Http\Controllers\IssueController::updatePartials">updatePartials</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/KanbanController.php.html#29"><abbr title="App\Http\Controllers\KanbanController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/KanbanController.php.html#42"><abbr title="App\Http\Controllers\KanbanController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/KanbanController.php.html#64"><abbr title="App\Http\Controllers\KanbanController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#24"><abbr title="App\Http\Controllers\LoginController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#32"><abbr title="App\Http\Controllers\LoginController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#43"><abbr title="App\Http\Controllers\LoginController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#52"><abbr title="App\Http\Controllers\LoginController::logout">logout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#65"><abbr title="App\Http\Controllers\LoginController::forgotPassword">forgotPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#78"><abbr title="App\Http\Controllers\LoginController::postForgotPassword">postForgotPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#97"><abbr title="App\Http\Controllers\LoginController::passwordReset">passwordReset</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#107"><abbr title="App\Http\Controllers\LoginController::passwordResetUpdate">passwordResetUpdate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#23"><abbr title="App\Http\Controllers\ProjectController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#34"><abbr title="App\Http\Controllers\ProjectController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#48"><abbr title="App\Http\Controllers\ProjectController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#60"><abbr title="App\Http\Controllers\ProjectController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#81"><abbr title="App\Http\Controllers\ProjectController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#95"><abbr title="App\Http\Controllers\ProjectController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#110"><abbr title="App\Http\Controllers\ProjectController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#136"><abbr title="App\Http\Controllers\ProjectController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#27"><abbr title="App\Http\Controllers\ProjectMemberController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#35"><abbr title="App\Http\Controllers\ProjectMemberController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#48"><abbr title="App\Http\Controllers\ProjectMemberController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#72"><abbr title="App\Http\Controllers\ProjectMemberController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#87"><abbr title="App\Http\Controllers\ProjectMemberController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#107"><abbr title="App\Http\Controllers\ProjectMemberController::memberAcceptInvitation">memberAcceptInvitation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#132"><abbr title="App\Http\Controllers\ProjectMemberController::resendInvitation">resendInvitation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/RegistrationController.php.html#17"><abbr title="App\Http\Controllers\RegistrationController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/RegistrationController.php.html#25"><abbr title="App\Http\Controllers\RegistrationController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/RegistrationController.php.html#33"><abbr title="App\Http\Controllers\RegistrationController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#37"><abbr title="App\Http\Controllers\UserController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#50"><abbr title="App\Http\Controllers\UserController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#58"><abbr title="App\Http\Controllers\UserController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#66"><abbr title="App\Http\Controllers\UserController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#74"><abbr title="App\Http\Controllers\UserController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#82"><abbr title="App\Http\Controllers\UserController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#90"><abbr title="App\Http\Controllers\UserController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#109"><abbr title="App\Http\Controllers\UserController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#121"><abbr title="App\Http\Controllers\UserController::accountInviteCreation">accountInviteCreation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#140"><abbr title="App\Http\Controllers\UserController::postAccountInviteCreation">postAccountInviteCreation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#168"><abbr title="App\Http\Controllers\UserController::verificationSend">verificationSend</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#184"><abbr title="App\Http\Controllers\UserController::verificationNotice">verificationNotice</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#193"><abbr title="App\Http\Controllers\UserController::verificationVerify">verificationVerify</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#206"><abbr title="App\Http\Controllers\UserController::closeVerificationDialog">closeVerificationDialog</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#13"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/ProjectRoleAccessMiddleware.php.html#24"><abbr title="App\Http\Middleware\ProjectRoleAccessMiddleware::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/ProjectRoleAccessMiddleware.php.html#35"><abbr title="App\Http\Middleware\ProjectRoleAccessMiddleware::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#18"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#14"><abbr title="App\Http\Middleware\TrustHosts::hosts">hosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/AddMemberRequest.php.html#16"><abbr title="App\Http\Requests\AddMemberRequest::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/AddMemberRequest.php.html#24"><abbr title="App\Http\Requests\AddMemberRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/AddMemberRequest.php.html#34"><abbr title="App\Http\Requests\AddMemberRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Comment/StoreDraftCommentRequest.php.html#12"><abbr title="App\Http\Requests\Comment\StoreDraftCommentRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Comment/StoreDraftCommentRequest.php.html#22"><abbr title="App\Http\Requests\Comment\StoreDraftCommentRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/DeleteMemberRequest.php.html#13"><abbr title="App\Http\Requests\DeleteMemberRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/DeleteMemberRequest.php.html#23"><abbr title="App\Http\Requests\DeleteMemberRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/EditMemberRoleRequest.php.html#16"><abbr title="App\Http\Requests\EditMemberRoleRequest::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/EditMemberRoleRequest.php.html#24"><abbr title="App\Http\Requests\EditMemberRoleRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/EditMemberRoleRequest.php.html#36"><abbr title="App\Http\Requests\EditMemberRoleRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/InviteAcceptRequest.php.html#12"><abbr title="App\Http\Requests\InviteAcceptRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/InviteAcceptRequest.php.html#22"><abbr title="App\Http\Requests\InviteAcceptRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/InviteUserCreateRequest.php.html#12"><abbr title="App\Http\Requests\InviteUserCreateRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/InviteUserCreateRequest.php.html#22"><abbr title="App\Http\Requests\InviteUserCreateRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Issue/DeleteIssueRequest.php.html#12"><abbr title="App\Http\Requests\Issue\DeleteIssueRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Issue/DeleteIssueRequest.php.html#22"><abbr title="App\Http\Requests\Issue\DeleteIssueRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Issue/StoreIssueRequest.php.html#12"><abbr title="App\Http\Requests\Issue\StoreIssueRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Issue/StoreIssueRequest.php.html#22"><abbr title="App\Http\Requests\Issue\StoreIssueRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Issue/UpdateIssueRequest.php.html#12"><abbr title="App\Http\Requests\Issue\UpdateIssueRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Issue/UpdateIssueRequest.php.html#22"><abbr title="App\Http\Requests\Issue\UpdateIssueRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Issue/UpdateIssueRequest.php.html#44"><abbr title="App\Http\Requests\Issue\UpdateIssueRequest::getValidationRules">getValidationRules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/LoginRequest.php.html#12"><abbr title="App\Http\Requests\LoginRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/LoginRequest.php.html#22"><abbr title="App\Http\Requests\LoginRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/PasswordUpdateRequest.php.html#12"><abbr title="App\Http\Requests\PasswordUpdateRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/PasswordUpdateRequest.php.html#22"><abbr title="App\Http\Requests\PasswordUpdateRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/PasswordUpdateRequest.php.html#37"><abbr title="App\Http\Requests\PasswordUpdateRequest::messages">messages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ResetPasswordRequest.php.html#12"><abbr title="App\Http\Requests\ResetPasswordRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ResetPasswordRequest.php.html#22"><abbr title="App\Http\Requests\ResetPasswordRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ResetPasswordRequest.php.html#29"><abbr title="App\Http\Requests\ResetPasswordRequest::messages">messages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreProjectRequest.php.html#12"><abbr title="App\Http\Requests\StoreProjectRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreProjectRequest.php.html#22"><abbr title="App\Http\Requests\StoreProjectRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreRegistrationRequest.php.html#12"><abbr title="App\Http\Requests\StoreRegistrationRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreRegistrationRequest.php.html#17"><abbr title="App\Http\Requests\StoreRegistrationRequest::messages">messages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreRegistrationRequest.php.html#29"><abbr title="App\Http\Requests\StoreRegistrationRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateProjectRequest.php.html#13"><abbr title="App\Http\Requests\UpdateProjectRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateProjectRequest.php.html#23"><abbr title="App\Http\Requests\UpdateProjectRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateUserRequest.php.html#13"><abbr title="App\Http\Requests\UpdateUserRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateUserRequest.php.html#23"><abbr title="App\Http\Requests\UpdateUserRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UserActiveRequest.php.html#12"><abbr title="App\Http\Requests\UserActiveRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UserActiveRequest.php.html#22"><abbr title="App\Http\Requests\UserActiveRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UserActiveRequest.php.html#43"><abbr title="App\Http\Requests\UserActiveRequest::messages">messages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/SendEmail.php.html#34"><abbr title="App\Mail\SendEmail::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/SendEmail.php.html#44"><abbr title="App\Mail\SendEmail::envelope">envelope</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/SendEmail.php.html#54"><abbr title="App\Mail\SendEmail::content">content</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/SendEmail.php.html#67"><abbr title="App\Mail\SendEmail::attachments">attachments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Attachment.php.html#25"><abbr title="App\Models\Attachment::target">target</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Comment.php.html#34"><abbr title="App\Models\Comment::issue">issue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Comment.php.html#39"><abbr title="App\Models\Comment::attachments">attachments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/History.php.html#23"><abbr title="App\Models\History::issue">issue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/History.php.html#28"><abbr title="App\Models\History::user">user</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Issue.php.html#48"><abbr title="App\Models\Issue::histories">histories</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Issue.php.html#53"><abbr title="App\Models\Issue::issues">issues</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Issue.php.html#58"><abbr title="App\Models\Issue::parent">parent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Issue.php.html#68"><abbr title="App\Models\Issue::assignee">assignee</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Issue.php.html#73"><abbr title="App\Models\Issue::reporter">reporter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Issue.php.html#88"><abbr title="App\Models\Issue::updater">updater</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Project.php.html#37"><abbr title="App\Models\Project::user">user</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/ProjectMember.php.html#27"><abbr title="App\Models\ProjectMember::user">user</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/ProjectMember.php.html#32"><abbr title="App\Models\ProjectMember::project">project</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/ProjectMember.php.html#37"><abbr title="App\Models\ProjectMember::createdBy">createdBy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#53"><abbr title="App\Models\User::projects">projects</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#58"><abbr title="App\Models\User::projectMembers">projectMembers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#63"><abbr title="App\Models\User::assignees">assignees</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#68"><abbr title="App\Models\User::reporters">reporters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#73"><abbr title="App\Models\User::histories">histories</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#78"><abbr title="App\Models\User::comments">comments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#83"><abbr title="App\Models\User::issues">issues</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#88"><abbr title="App\Models\User::issuesUpdater">issuesUpdater</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#100"><abbr title="App\Models\User::sendPasswordResetNotification">sendPasswordResetNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#111"><abbr title="App\Models\User::sendEmailVerificationNotification">sendEmailVerificationNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Notifications/ResetPasswordNotification.php.html#21"><abbr title="App\Notifications\ResetPasswordNotification::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Notifications/ResetPasswordNotification.php.html#33"><abbr title="App\Notifications\ResetPasswordNotification::via">via</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Notifications/ResetPasswordNotification.php.html#42"><abbr title="App\Notifications\ResetPasswordNotification::toMail">toMail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Notifications/ResetPasswordNotification.php.html#60"><abbr title="App\Notifications\ResetPasswordNotification::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Notifications/VerifyEmail.php.html#16"><abbr title="App\Notifications\VerifyEmail::toMail">toMail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/IssuePolicy.php.html#24"><abbr title="App\Policies\IssuePolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/IssuePolicy.php.html#34"><abbr title="App\Policies\IssuePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/IssuePolicy.php.html#71"><abbr title="App\Policies\IssuePolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProjectMemberPolicy.php.html#15"><abbr title="App\Policies\ProjectMemberPolicy::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProjectMemberPolicy.php.html#22"><abbr title="App\Policies\ProjectMemberPolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProjectMemberPolicy.php.html#31"><abbr title="App\Policies\ProjectMemberPolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProjectMemberPolicy.php.html#40"><abbr title="App\Policies\ProjectMemberPolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProjectPolicy.php.html#13"><abbr title="App\Policies\ProjectPolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProjectPolicy.php.html#21"><abbr title="App\Policies\ProjectPolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#13"><abbr title="App\Providers\BroadcastServiceProvider::boot">boot</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/BaseRepository.php.html#38"><abbr title="App\Repositories\BaseRepository::getAll">getAll</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/BaseRepository.php.html#74"><abbr title="App\Repositories\BaseRepository::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/BaseRepository.php.html#105"><abbr title="App\Repositories\BaseRepository::insertGetId">insertGetId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Comment/CommentRepository.php.html#54"><abbr title="App\Repositories\Comment\CommentRepository::getCommentsByParentId">getCommentsByParentId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Comment/CommentRepository.php.html#66"><abbr title="App\Repositories\Comment\CommentRepository::deleteMultipleSubComment">deleteMultipleSubComment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/History/HistoryRepository.php.html#22"><abbr title="App\Repositories\History\HistoryRepository::getHistoriesByIssue">getHistoriesByIssue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#23"><abbr title="App\Repositories\Issue\IssueRepository::getIssuesByProjectId">getIssuesByProjectId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#35"><abbr title="App\Repositories\Issue\IssueRepository::getIssuesByParentId">getIssuesByParentId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#47"><abbr title="App\Repositories\Issue\IssueRepository::getParentIssuesByProjectId">getParentIssuesByProjectId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#59"><abbr title="App\Repositories\Issue\IssueRepository::getParentIssuesByProjectKey">getParentIssuesByProjectKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#73"><abbr title="App\Repositories\Issue\IssueRepository::getIssueKeyByProjectId">getIssueKeyByProjectId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#104"><abbr title="App\Repositories\Issue\IssueRepository::getIssueDetail">getIssueDetail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#123"><abbr title="App\Repositories\Issue\IssueRepository::deleteChildIssuesByParentId">deleteChildIssuesByParentId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#137"><abbr title="App\Repositories\Issue\IssueRepository::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#159"><abbr title="App\Repositories\Issue\IssueRepository::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#173"><abbr title="App\Repositories\Issue\IssueRepository::filter">filter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#232"><abbr title="App\Repositories\Issue\IssueRepository::getMilestonesByProject">getMilestonesByProject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Project/ProjectRepository.php.html#27"><abbr title="App\Repositories\Project\ProjectRepository::getProjectsByUserId">getProjectsByUserId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Project/ProjectRepository.php.html#40"><abbr title="App\Repositories\Project\ProjectRepository::getProjectMembers">getProjectMembers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Project/ProjectRepository.php.html#54"><abbr title="App\Repositories\Project\ProjectRepository::isMemberInProject">isMemberInProject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Project/ProjectRepository.php.html#65"><abbr title="App\Repositories\Project\ProjectRepository::getProjectByKey">getProjectByKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ProjectMember/MemberRepository.php.html#22"><abbr title="App\Repositories\ProjectMember\MemberRepository::getUserRoleID">getUserRoleID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ProjectMember/MemberRepository.php.html#34"><abbr title="App\Repositories\ProjectMember\MemberRepository::getProjectMembers">getProjectMembers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/User/UserRepository.php.html#19"><abbr title="App\Repositories\User\UserRepository::getUserByEmail">getUserByEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/User/UserRepository.php.html#24"><abbr title="App\Repositories\User\UserRepository::getEmailByComment">getEmailByComment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Rules/CheckAllowAddRole.php.html#16"><abbr title="App\Rules\CheckAllowAddRole::validate">validate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Rules/CheckAllowDeleteRole.php.html#16"><abbr title="App\Rules\CheckAllowDeleteRole::validate">validate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Rules/CheckAllowEditRole.php.html#17"><abbr title="App\Rules\CheckAllowEditRole::validate">validate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#62"><abbr title="App\Services\AttachmentService::changeUserPhoto">changeUserPhoto</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#88"><abbr title="App\Services\AttachmentService::changeProjectPhoto">changeProjectPhoto</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/HistoryService.php.html#63"><abbr title="App\Services\HistoryService::getHistoriesByIssue">getHistoriesByIssue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/IssueService.php.html#276"><abbr title="App\Services\IssueService::filter">filter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/LoginService.php.html#22"><abbr title="App\Services\LoginService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/LoginService.php.html#27"><abbr title="App\Services\LoginService::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/LoginService.php.html#39"><abbr title="App\Services\LoginService::forgotPassword">forgotPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/LoginService.php.html#51"><abbr title="App\Services\LoginService::updateResetPassword">updateResetPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/MailService.php.html#30"><abbr title="App\Services\MailService::send">send</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/MailService.php.html#42"><abbr title="App\Services\MailService::sendIssueUpdate">sendIssueUpdate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#64"><abbr title="App\Services\ProjectMemberService::editMemberRole">editMemberRole</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#81"><abbr title="App\Services\ProjectMemberService::addNewMemberToProject">addNewMemberToProject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#168"><abbr title="App\Services\ProjectMemberService::resendInvitation">resendInvitation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#217"><abbr title="App\Services\ProjectMemberService::getUserRoleID">getUserRoleID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#229"><abbr title="App\Services\ProjectMemberService::isMemberExistInProject">isMemberExistInProject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#243"><abbr title="App\Services\ProjectMemberService::getProjectMembers">getProjectMembers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#257"><abbr title="App\Services\ProjectMemberService::getPaginateMembers">getPaginateMembers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#273"><abbr title="App\Services\ProjectMemberService::memberAcceptInvitation">memberAcceptInvitation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#292"><abbr title="App\Services\ProjectMemberService::deleteProjectMember">deleteProjectMember</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#31"><abbr title="App\Services\ProjectService::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#61"><abbr title="App\Services\ProjectService::find">find</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#73"><abbr title="App\Services\ProjectService::getProjectsByUserId">getProjectsByUserId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#84"><abbr title="App\Services\ProjectService::getProjectByKey">getProjectByKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#107"><abbr title="App\Services\ProjectService::getIssuesByKey">getIssuesByKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#137"><abbr title="App\Services\ProjectService::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#150"><abbr title="App\Services\ProjectService::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#35"><abbr title="App\Services\UserService::getUserWithEmail">getUserWithEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#40"><abbr title="App\Services\UserService::authUser">authUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#46"><abbr title="App\Services\UserService::register">register</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#70"><abbr title="App\Services\UserService::find">find</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#82"><abbr title="App\Services\UserService::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#98"><abbr title="App\Services\UserService::generateNewUserOnInvite">generateNewUserOnInvite</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#118"><abbr title="App\Services\UserService::setUserActive">setUserActive</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#132"><abbr title="App\Services\UserService::updateUserAccount">updateUserAccount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#151"><abbr title="App\Services\UserService::isUserInactive">isUserInactive</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#166"><abbr title="App\Services\UserService::getUserByID">getUserByID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#176"><abbr title="App\Services\UserService::sendEmailVerificationNotification">sendEmailVerificationNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#15"><abbr title="App\Providers\TelescopeServiceProvider::register">register</abbr></a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#57"><abbr title="App\Providers\TelescopeServiceProvider::gate">gate</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#226"><abbr title="App\Services\AttachmentService::downloadAttachment">downloadAttachment</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="Repositories/BaseRepository.php.html#89"><abbr title="App\Repositories\BaseRepository::delete">delete</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#202"><abbr title="App\Services\AttachmentService::getAttachmentViewUrl">getAttachmentViewUrl</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="Services/HistoryService.php.html#30"><abbr title="App\Services\HistoryService::createHistory">createHistory</abbr></a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="Services/CommentService.php.html#136"><abbr title="App\Services\CommentService::notifyForCommentActions">notifyForCommentActions</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#161"><abbr title="App\Services\AttachmentService::deleteAttachment">deleteAttachment</abbr></a></td><td class="text-right">84%</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#115"><abbr title="App\Services\AttachmentService::uploadAttachment">uploadAttachment</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#37"><abbr title="App\Providers\TelescopeServiceProvider::hideSensitiveRequestDetails">hideSensitiveRequestDetails</abbr></a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#173"><abbr title="App\Repositories\Issue\IssueRepository::filter">filter</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="Services/IssueService.php.html#276"><abbr title="App\Services\IssueService::filter">filter</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Console/Commands/SendEmailIssueLate.php.html#32"><abbr title="App\Console\Commands\SendEmailIssueLate::handle">handle</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Policies/IssuePolicy.php.html#34"><abbr title="App\Policies\IssuePolicy::update">update</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Console/Commands/SendEmailIssue.php.html#34"><abbr title="App\Console\Commands\SendEmailIssue::handle">handle</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Http/Middleware/ProjectRoleAccessMiddleware.php.html#35"><abbr title="App\Http\Middleware\ProjectRoleAccessMiddleware::handle">handle</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Services/MailService.php.html#42"><abbr title="App\Services\MailService::sendIssueUpdate">sendIssueUpdate</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#107"><abbr title="App\Http\Controllers\ProjectMemberController::memberAcceptInvitation">memberAcceptInvitation</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#90"><abbr title="App\Http\Controllers\UserController::update">update</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#18"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#62"><abbr title="App\Services\AttachmentService::changeUserPhoto">changeUserPhoto</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#88"><abbr title="App\Services\AttachmentService::changeProjectPhoto">changeProjectPhoto</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#107"><abbr title="App\Services\ProjectService::getIssuesByKey">getIssuesByKey</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#15"><abbr title="App\Providers\TelescopeServiceProvider::register">register</abbr></a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="Http/Controllers/IssueController.php.html#263"><abbr title="App\Http\Controllers\IssueController::updatePartials">updatePartials</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/KanbanController.php.html#42"><abbr title="App\Http\Controllers\KanbanController::index">index</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#78"><abbr title="App\Http\Controllers\LoginController::postForgotPassword">postForgotPassword</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#60"><abbr title="App\Http\Controllers\ProjectController::store">store</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#110"><abbr title="App\Http\Controllers\ProjectController::update">update</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#87"><abbr title="App\Http\Controllers\ProjectMemberController::destroy">destroy</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#137"><abbr title="App\Repositories\Issue\IssueRepository::update">update</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#232"><abbr title="App\Repositories\Issue\IssueRepository::getMilestonesByProject">getMilestonesByProject</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repositories/Project/ProjectRepository.php.html#65"><abbr title="App\Repositories\Project\ProjectRepository::getProjectByKey">getProjectByKey</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Rules/CheckAllowAddRole.php.html#16"><abbr title="App\Rules\CheckAllowAddRole::validate">validate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#81"><abbr title="App\Services\ProjectMemberService::addNewMemberToProject">addNewMemberToProject</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#273"><abbr title="App\Services\ProjectMemberService::memberAcceptInvitation">memberAcceptInvitation</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#84"><abbr title="App\Services\ProjectService::getProjectByKey">getProjectByKey</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/CommentService.php.html#136"><abbr title="App\Services\CommentService::notifyForCommentActions">notifyForCommentActions</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="Services/HistoryService.php.html#30"><abbr title="App\Services\HistoryService::createHistory">createHistory</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#32"><abbr title="App\Exceptions\Handler::render">render</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Api/HistoryController.php.html#30"><abbr title="App\Http\Controllers\Api\HistoryController::history">history</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Api/KanbanFilterController.php.html#38"><abbr title="App\Http\Controllers\Api\KanbanFilterController::index">index</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/IssueController.php.html#242"><abbr title="App\Http\Controllers\IssueController::filter">filter</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/KanbanController.php.html#64"><abbr title="App\Http\Controllers\KanbanController::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#32"><abbr title="App\Http\Controllers\LoginController::index">index</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#43"><abbr title="App\Http\Controllers\LoginController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/LoginController.php.html#107"><abbr title="App\Http\Controllers\LoginController::passwordResetUpdate">passwordResetUpdate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#81"><abbr title="App\Http\Controllers\ProjectController::destroy">destroy</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#95"><abbr title="App\Http\Controllers\ProjectController::edit">edit</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectController.php.html#136"><abbr title="App\Http\Controllers\ProjectController::show">show</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#48"><abbr title="App\Http\Controllers\ProjectMemberController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#72"><abbr title="App\Http\Controllers\ProjectMemberController::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/ProjectMemberController.php.html#132"><abbr title="App\Http\Controllers\ProjectMemberController::resendInvitation">resendInvitation</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/RegistrationController.php.html#33"><abbr title="App\Http\Controllers\RegistrationController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#121"><abbr title="App\Http\Controllers\UserController::accountInviteCreation">accountInviteCreation</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#140"><abbr title="App\Http\Controllers\UserController::postAccountInviteCreation">postAccountInviteCreation</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#13"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/BaseRepository.php.html#74"><abbr title="App\Repositories\BaseRepository::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#73"><abbr title="App\Repositories\Issue\IssueRepository::getIssueKeyByProjectId">getIssueKeyByProjectId</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/Issue/IssueRepository.php.html#159"><abbr title="App\Repositories\Issue\IssueRepository::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Rules/CheckAllowDeleteRole.php.html#16"><abbr title="App\Rules\CheckAllowDeleteRole::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Rules/CheckAllowEditRole.php.html#17"><abbr title="App\Rules\CheckAllowEditRole::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#64"><abbr title="App\Services\ProjectMemberService::editMemberRole">editMemberRole</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#168"><abbr title="App\Services\ProjectMemberService::resendInvitation">resendInvitation</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/ProjectMemberService.php.html#292"><abbr title="App\Services\ProjectMemberService::deleteProjectMember">deleteProjectMember</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/ProjectService.php.html#31"><abbr title="App\Services\ProjectService::create">create</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/UserService.php.html#46"><abbr title="App\Services\UserService::register">register</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/UserService.php.html#82"><abbr title="App\Services\UserService::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#161"><abbr title="App\Services\AttachmentService::deleteAttachment">deleteAttachment</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#115"><abbr title="App\Services\AttachmentService::uploadAttachment">uploadAttachment</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#226"><abbr title="App\Services\AttachmentService::downloadAttachment">downloadAttachment</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Services/AttachmentService.php.html#202"><abbr title="App\Services\AttachmentService::getAttachmentViewUrl">getAttachmentViewUrl</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Repositories/BaseRepository.php.html#89"><abbr title="App\Repositories\BaseRepository::delete">delete</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#37"><abbr title="App\Providers\TelescopeServiceProvider::hideSensitiveRequestDetails">hideSensitiveRequestDetails</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 10.1.5</a> using <a href="https://www.php.net/" target="_top">PHP 8.2.12</a> and <a href="https://phpunit.de/">PHPUnit 10.3.5</a> at Mon Nov 13 4:29:19 UTC 2023.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=10.1.5" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=10.1.5" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=10.1.5" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([46,7,1,0,1,2,5,2,3,1,4,19], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([215,0,0,0,1,1,0,0,3,5,3,86], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,5,"<a href=\"Console\/Commands\/SendEmailIssue.php.html#13\">App\\Console\\Commands\\SendEmailIssue<\/a>"],[0,8,"<a href=\"Console\/Commands\/SendEmailIssueLate.php.html#13\">App\\Console\\Commands\\SendEmailIssueLate<\/a>"],[50,2,"<a href=\"Console\/Kernel.php.html#8\">App\\Console\\Kernel<\/a>"],[40,3,"<a href=\"Exceptions\/Handler.php.html#8\">App\\Exceptions\\Handler<\/a>"],[100,0,"<a href=\"Exceptions\/UserAlreadyExistsException.php.html#8\">App\\Exceptions\\UserAlreadyExistsException<\/a>"],[100,0,"<a href=\"Exceptions\/UserNotFoundException.php.html#8\">App\\Exceptions\\UserNotFoundException<\/a>"],[100,16,"<a href=\"Http\/Controllers\/Api\/AttachmentController.php.html#14\">App\\Http\\Controllers\\Api\\AttachmentController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/HistoryController.php.html#9\">App\\Http\\Controllers\\Api\\HistoryController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/KanbanFilterController.php.html#12\">App\\Http\\Controllers\\Api\\KanbanFilterController<\/a>"],[0,7,"<a href=\"Http\/Controllers\/AttachmentController.php.html#8\">App\\Http\\Controllers\\AttachmentController<\/a>"],[100,13,"<a href=\"Http\/Controllers\/CommentController.php.html#23\">App\\Http\\Controllers\\CommentController<\/a>"],[100,0,"<a href=\"Http\/Controllers\/Controller.php.html#9\">App\\Http\\Controllers\\Controller<\/a>"],[70,27,"<a href=\"Http\/Controllers\/IssueController.php.html#22\">App\\Http\\Controllers\\IssueController<\/a>"],[0,6,"<a href=\"Http\/Controllers\/KanbanController.php.html#17\">App\\Http\\Controllers\\KanbanController<\/a>"],[0,13,"<a href=\"Http\/Controllers\/LoginController.php.html#17\">App\\Http\\Controllers\\LoginController<\/a>"],[0,15,"<a href=\"Http\/Controllers\/ProjectController.php.html#11\">App\\Http\\Controllers\\ProjectController<\/a>"],[0,15,"<a href=\"Http\/Controllers\/ProjectMemberController.php.html#19\">App\\Http\\Controllers\\ProjectMemberController<\/a>"],[0,4,"<a href=\"Http\/Controllers\/RegistrationController.php.html#10\">App\\Http\\Controllers\\RegistrationController<\/a>"],[0,19,"<a href=\"Http\/Controllers\/UserController.php.html#20\">App\\Http\\Controllers\\UserController<\/a>"],[100,0,"<a href=\"Http\/Kernel.php.html#7\">App\\Http\\Kernel<\/a>"],[0,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#8\">App\\Http\\Middleware\\Authenticate<\/a>"],[100,0,"<a href=\"Http\/Middleware\/EncryptCookies.php.html#7\">App\\Http\\Middleware\\EncryptCookies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/PreventRequestsDuringMaintenance.php.html#7\">App\\Http\\Middleware\\PreventRequestsDuringMaintenance<\/a>"],[0,6,"<a href=\"Http\/Middleware\/ProjectRoleAccessMiddleware.php.html#12\">App\\Http\\Middleware\\ProjectRoleAccessMiddleware<\/a>"],[0,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#11\">App\\Http\\Middleware\\RedirectIfAuthenticated<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrimStrings.php.html#7\">App\\Http\\Middleware\\TrimStrings<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#7\">App\\Http\\Middleware\\TrustHosts<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrustProxies.php.html#8\">App\\Http\\Middleware\\TrustProxies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/ValidateSignature.php.html#7\">App\\Http\\Middleware\\ValidateSignature<\/a>"],[100,0,"<a href=\"Http\/Middleware\/VerifyCsrfToken.php.html#7\">App\\Http\\Middleware\\VerifyCsrfToken<\/a>"],[0,3,"<a href=\"Http\/Requests\/AddMemberRequest.php.html#9\">App\\Http\\Requests\\AddMemberRequest<\/a>"],[100,2,"<a href=\"Http\/Requests\/Attachment\/UploadAttachmentRequest.php.html#7\">App\\Http\\Requests\\Attachment\\UploadAttachmentRequest<\/a>"],[92.3076923076923,3,"<a href=\"Http\/Requests\/Comment\/StoreCommentRequest.php.html#7\">App\\Http\\Requests\\Comment\\StoreCommentRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/Comment\/StoreDraftCommentRequest.php.html#7\">App\\Http\\Requests\\Comment\\StoreDraftCommentRequest<\/a>"],[90.9090909090909,3,"<a href=\"Http\/Requests\/Comment\/UpdateCommentRequest.php.html#7\">App\\Http\\Requests\\Comment\\UpdateCommentRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/DeleteMemberRequest.php.html#8\">App\\Http\\Requests\\DeleteMemberRequest<\/a>"],[0,3,"<a href=\"Http\/Requests\/EditMemberRoleRequest.php.html#9\">App\\Http\\Requests\\EditMemberRoleRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/InviteAcceptRequest.php.html#7\">App\\Http\\Requests\\InviteAcceptRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/InviteUserCreateRequest.php.html#7\">App\\Http\\Requests\\InviteUserCreateRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/Issue\/DeleteIssueRequest.php.html#7\">App\\Http\\Requests\\Issue\\DeleteIssueRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/Issue\/StoreIssueRequest.php.html#7\">App\\Http\\Requests\\Issue\\StoreIssueRequest<\/a>"],[0,3,"<a href=\"Http\/Requests\/Issue\/UpdateIssueRequest.php.html#7\">App\\Http\\Requests\\Issue\\UpdateIssueRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/LoginRequest.php.html#7\">App\\Http\\Requests\\LoginRequest<\/a>"],[0,3,"<a href=\"Http\/Requests\/PasswordUpdateRequest.php.html#7\">App\\Http\\Requests\\PasswordUpdateRequest<\/a>"],[0,3,"<a href=\"Http\/Requests\/ResetPasswordRequest.php.html#7\">App\\Http\\Requests\\ResetPasswordRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/StoreProjectRequest.php.html#7\">App\\Http\\Requests\\StoreProjectRequest<\/a>"],[0,3,"<a href=\"Http\/Requests\/StoreRegistrationRequest.php.html#7\">App\\Http\\Requests\\StoreRegistrationRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdateProjectRequest.php.html#8\">App\\Http\\Requests\\UpdateProjectRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdateUserRequest.php.html#8\">App\\Http\\Requests\\UpdateUserRequest<\/a>"],[0,3,"<a href=\"Http\/Requests\/UserActiveRequest.php.html#7\">App\\Http\\Requests\\UserActiveRequest<\/a>"],[0,4,"<a href=\"Mail\/SendEmail.php.html#12\">App\\Mail\\SendEmail<\/a>"],[0,1,"<a href=\"Models\/Attachment.php.html#9\">App\\Models\\Attachment<\/a>"],[50,4,"<a href=\"Models\/Comment.php.html#11\">App\\Models\\Comment<\/a>"],[0,2,"<a href=\"Models\/History.php.html#9\">App\\Models\\History<\/a>"],[40,10,"<a href=\"Models\/Issue.php.html#16\">App\\Models\\Issue<\/a>"],[66.66666666666666,3,"<a href=\"Models\/Project.php.html#11\">App\\Models\\Project<\/a>"],[0,3,"<a href=\"Models\/ProjectMember.php.html#11\">App\\Models\\ProjectMember<\/a>"],[0,10,"<a href=\"Models\/User.php.html#13\">App\\Models\\User<\/a>"],[0,4,"<a href=\"Notifications\/ResetPasswordNotification.php.html#11\">App\\Notifications\\ResetPasswordNotification<\/a>"],[0,1,"<a href=\"Notifications\/VerifyEmail.php.html#8\">App\\Notifications\\VerifyEmail<\/a>"],[3.7037037037037033,11,"<a href=\"Policies\/IssuePolicy.php.html#9\">App\\Policies\\IssuePolicy<\/a>"],[0,4,"<a href=\"Policies\/ProjectMemberPolicy.php.html#8\">App\\Policies\\ProjectMemberPolicy<\/a>"],[0,2,"<a href=\"Policies\/ProjectPolicy.php.html#8\">App\\Policies\\ProjectPolicy<\/a>"],[100,2,"<a href=\"Providers\/AppServiceProvider.php.html#11\">App\\Providers\\AppServiceProvider<\/a>"],[100,2,"<a href=\"Providers\/AttachmentServiceProvider.php.html#9\">App\\Providers\\AttachmentServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#15\">App\\Providers\\AuthServiceProvider<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#8\">App\\Providers\\BroadcastServiceProvider<\/a>"],[100,2,"<a href=\"Providers\/EventServiceProvider.php.html#10\">App\\Providers\\EventServiceProvider<\/a>"],[100,2,"<a href=\"Providers\/HistoryServiceProvider.php.html#7\">App\\Providers\\HistoryServiceProvider<\/a>"],[90,2,"<a href=\"Providers\/RouteServiceProvider.php.html#11\">App\\Providers\\RouteServiceProvider<\/a>"],[52.17391304347826,9,"<a href=\"Providers\/TelescopeServiceProvider.php.html#10\">App\\Providers\\TelescopeServiceProvider<\/a>"],[100,2,"<a href=\"Repositories\/Attachment\/AttachmentRepository.php.html#9\">App\\Repositories\\Attachment\\AttachmentRepository<\/a>"],[56.25,10,"<a href=\"Repositories\/BaseRepository.php.html#7\">App\\Repositories\\BaseRepository<\/a>"],[76.92307692307693,5,"<a href=\"Repositories\/Comment\/CommentRepository.php.html#11\">App\\Repositories\\Comment\\CommentRepository<\/a>"],[50,2,"<a href=\"Repositories\/History\/HistoryRepository.php.html#8\">App\\Repositories\\History\\HistoryRepository<\/a>"],[2.3529411764705883,34,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#9\">App\\Repositories\\Issue\\IssueRepository<\/a>"],[5.555555555555555,7,"<a href=\"Repositories\/Project\/ProjectRepository.php.html#13\">App\\Repositories\\Project\\ProjectRepository<\/a>"],[33.33333333333333,3,"<a href=\"Repositories\/ProjectMember\/MemberRepository.php.html#8\">App\\Repositories\\ProjectMember\\MemberRepository<\/a>"],[16.666666666666664,3,"<a href=\"Repositories\/User\/UserRepository.php.html#8\">App\\Repositories\\User\\UserRepository<\/a>"],[0,3,"<a href=\"Rules\/CheckAllowAddRole.php.html#8\">App\\Rules\\CheckAllowAddRole<\/a>"],[0,2,"<a href=\"Rules\/CheckAllowDeleteRole.php.html#8\">App\\Rules\\CheckAllowDeleteRole<\/a>"],[0,2,"<a href=\"Rules\/CheckAllowEditRole.php.html#8\">App\\Rules\\CheckAllowEditRole<\/a>"],[66.3157894736842,24,"<a href=\"Services\/AttachmentService.php.html#11\">App\\Services\\AttachmentService<\/a>"],[92.85714285714286,26,"<a href=\"Services\/CommentService.php.html#19\">App\\Services\\CommentService<\/a>"],[78.94736842105263,8,"<a href=\"Services\/HistoryService.php.html#8\">App\\Services\\HistoryService<\/a>"],[80.7017543859649,45,"<a href=\"Services\/IssueService.php.html#10\">App\\Services\\IssueService<\/a>"],[0,4,"<a href=\"Services\/LoginService.php.html#15\">App\\Services\\LoginService<\/a>"],[5,7,"<a href=\"Services\/MailService.php.html#9\">App\\Services\\MailService<\/a>"],[3.225806451612903,17,"<a href=\"Services\/ProjectMemberService.php.html#23\">App\\Services\\ProjectMemberService<\/a>"],[2.631578947368421,14,"<a href=\"Services\/ProjectService.php.html#12\">App\\Services\\ProjectService<\/a>"],[2.631578947368421,14,"<a href=\"Services\/UserService.php.html#15\">App\\Services\\UserService<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,5,"<a href=\"Console\/Commands\/SendEmailIssue.php.html#34\">App\\Console\\Commands\\SendEmailIssue::handle<\/a>"],[0,8,"<a href=\"Console\/Commands\/SendEmailIssueLate.php.html#32\">App\\Console\\Commands\\SendEmailIssueLate::handle<\/a>"],[0,1,"<a href=\"Console\/Kernel.php.html#15\">App\\Console\\Kernel::schedule<\/a>"],[100,1,"<a href=\"Console\/Kernel.php.html#24\">App\\Console\\Kernel::commands<\/a>"],[100,1,"<a href=\"Exceptions\/Handler.php.html#25\">App\\Exceptions\\Handler::register<\/a>"],[0,2,"<a href=\"Exceptions\/Handler.php.html#32\">App\\Exceptions\\Handler::render<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Api\/AttachmentController.php.html#26\">App\\Http\\Controllers\\Api\\AttachmentController::__construct<\/a>"],[100,6,"<a href=\"Http\/Controllers\/Api\/AttachmentController.php.html#39\">App\\Http\\Controllers\\Api\\AttachmentController::attachment<\/a>"],[100,3,"<a href=\"Http\/Controllers\/Api\/AttachmentController.php.html#75\">App\\Http\\Controllers\\Api\\AttachmentController::upload<\/a>"],[100,2,"<a href=\"Http\/Controllers\/Api\/AttachmentController.php.html#114\">App\\Http\\Controllers\\Api\\AttachmentController::delete<\/a>"],[100,2,"<a href=\"Http\/Controllers\/Api\/AttachmentController.php.html#135\">App\\Http\\Controllers\\Api\\AttachmentController::download<\/a>"],[100,2,"<a href=\"Http\/Controllers\/Api\/AttachmentController.php.html#154\">App\\Http\\Controllers\\Api\\AttachmentController::show<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Api\/HistoryController.php.html#18\">App\\Http\\Controllers\\Api\\HistoryController::__construct<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Api\/HistoryController.php.html#30\">App\\Http\\Controllers\\Api\\HistoryController::history<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Api\/KanbanFilterController.php.html#24\">App\\Http\\Controllers\\Api\\KanbanFilterController::__construct<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Api\/KanbanFilterController.php.html#38\">App\\Http\\Controllers\\Api\\KanbanFilterController::index<\/a>"],[0,1,"<a href=\"Http\/Controllers\/AttachmentController.php.html#13\">App\\Http\\Controllers\\AttachmentController::index<\/a>"],[0,1,"<a href=\"Http\/Controllers\/AttachmentController.php.html#21\">App\\Http\\Controllers\\AttachmentController::create<\/a>"],[0,1,"<a href=\"Http\/Controllers\/AttachmentController.php.html#29\">App\\Http\\Controllers\\AttachmentController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/AttachmentController.php.html#37\">App\\Http\\Controllers\\AttachmentController::show<\/a>"],[0,1,"<a href=\"Http\/Controllers\/AttachmentController.php.html#45\">App\\Http\\Controllers\\AttachmentController::edit<\/a>"],[0,1,"<a href=\"Http\/Controllers\/AttachmentController.php.html#53\">App\\Http\\Controllers\\AttachmentController::update<\/a>"],[0,1,"<a href=\"Http\/Controllers\/AttachmentController.php.html#61\">App\\Http\\Controllers\\AttachmentController::destroy<\/a>"],[100,1,"<a href=\"Http\/Controllers\/CommentController.php.html#38\">App\\Http\\Controllers\\CommentController::__construct<\/a>"],[100,4,"<a href=\"Http\/Controllers\/CommentController.php.html#52\">App\\Http\\Controllers\\CommentController::index<\/a>"],[100,3,"<a href=\"Http\/Controllers\/CommentController.php.html#79\">App\\Http\\Controllers\\CommentController::store<\/a>"],[100,2,"<a href=\"Http\/Controllers\/CommentController.php.html#106\">App\\Http\\Controllers\\CommentController::update<\/a>"],[100,2,"<a href=\"Http\/Controllers\/CommentController.php.html#126\">App\\Http\\Controllers\\CommentController::destroy<\/a>"],[100,1,"<a href=\"Http\/Controllers\/CommentController.php.html#143\">App\\Http\\Controllers\\CommentController::createDraftComment<\/a>"],[100,1,"<a href=\"Http\/Controllers\/IssueController.php.html#45\">App\\Http\\Controllers\\IssueController::__construct<\/a>"],[100,2,"<a href=\"Http\/Controllers\/IssueController.php.html#63\">App\\Http\\Controllers\\IssueController::index<\/a>"],[100,4,"<a href=\"Http\/Controllers\/IssueController.php.html#81\">App\\Http\\Controllers\\IssueController::create<\/a>"],[100,2,"<a href=\"Http\/Controllers\/IssueController.php.html#109\">App\\Http\\Controllers\\IssueController::store<\/a>"],[100,3,"<a href=\"Http\/Controllers\/IssueController.php.html#131\">App\\Http\\Controllers\\IssueController::show<\/a>"],[100,3,"<a href=\"Http\/Controllers\/IssueController.php.html#160\">App\\Http\\Controllers\\IssueController::edit<\/a>"],[100,3,"<a href=\"Http\/Controllers\/IssueController.php.html#185\">App\\Http\\Controllers\\IssueController::update<\/a>"],[100,4,"<a href=\"Http\/Controllers\/IssueController.php.html#214\">App\\Http\\Controllers\\IssueController::destroy<\/a>"],[0,2,"<a href=\"Http\/Controllers\/IssueController.php.html#242\">App\\Http\\Controllers\\IssueController::filter<\/a>"],[0,3,"<a href=\"Http\/Controllers\/IssueController.php.html#263\">App\\Http\\Controllers\\IssueController::updatePartials<\/a>"],[0,1,"<a href=\"Http\/Controllers\/KanbanController.php.html#29\">App\\Http\\Controllers\\KanbanController::__construct<\/a>"],[0,3,"<a href=\"Http\/Controllers\/KanbanController.php.html#42\">App\\Http\\Controllers\\KanbanController::index<\/a>"],[0,2,"<a href=\"Http\/Controllers\/KanbanController.php.html#64\">App\\Http\\Controllers\\KanbanController::update<\/a>"],[0,1,"<a href=\"Http\/Controllers\/LoginController.php.html#24\">App\\Http\\Controllers\\LoginController::__construct<\/a>"],[0,2,"<a href=\"Http\/Controllers\/LoginController.php.html#32\">App\\Http\\Controllers\\LoginController::index<\/a>"],[0,2,"<a href=\"Http\/Controllers\/LoginController.php.html#43\">App\\Http\\Controllers\\LoginController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/LoginController.php.html#52\">App\\Http\\Controllers\\LoginController::logout<\/a>"],[0,1,"<a href=\"Http\/Controllers\/LoginController.php.html#65\">App\\Http\\Controllers\\LoginController::forgotPassword<\/a>"],[0,3,"<a href=\"Http\/Controllers\/LoginController.php.html#78\">App\\Http\\Controllers\\LoginController::postForgotPassword<\/a>"],[0,1,"<a href=\"Http\/Controllers\/LoginController.php.html#97\">App\\Http\\Controllers\\LoginController::passwordReset<\/a>"],[0,2,"<a href=\"Http\/Controllers\/LoginController.php.html#107\">App\\Http\\Controllers\\LoginController::passwordResetUpdate<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ProjectController.php.html#23\">App\\Http\\Controllers\\ProjectController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ProjectController.php.html#34\">App\\Http\\Controllers\\ProjectController::index<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ProjectController.php.html#48\">App\\Http\\Controllers\\ProjectController::create<\/a>"],[0,3,"<a href=\"Http\/Controllers\/ProjectController.php.html#60\">App\\Http\\Controllers\\ProjectController::store<\/a>"],[0,2,"<a href=\"Http\/Controllers\/ProjectController.php.html#81\">App\\Http\\Controllers\\ProjectController::destroy<\/a>"],[0,2,"<a href=\"Http\/Controllers\/ProjectController.php.html#95\">App\\Http\\Controllers\\ProjectController::edit<\/a>"],[0,3,"<a href=\"Http\/Controllers\/ProjectController.php.html#110\">App\\Http\\Controllers\\ProjectController::update<\/a>"],[0,2,"<a href=\"Http\/Controllers\/ProjectController.php.html#136\">App\\Http\\Controllers\\ProjectController::show<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ProjectMemberController.php.html#27\">App\\Http\\Controllers\\ProjectMemberController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ProjectMemberController.php.html#35\">App\\Http\\Controllers\\ProjectMemberController::index<\/a>"],[0,2,"<a href=\"Http\/Controllers\/ProjectMemberController.php.html#48\">App\\Http\\Controllers\\ProjectMemberController::store<\/a>"],[0,2,"<a href=\"Http\/Controllers\/ProjectMemberController.php.html#72\">App\\Http\\Controllers\\ProjectMemberController::update<\/a>"],[0,3,"<a href=\"Http\/Controllers\/ProjectMemberController.php.html#87\">App\\Http\\Controllers\\ProjectMemberController::destroy<\/a>"],[0,4,"<a href=\"Http\/Controllers\/ProjectMemberController.php.html#107\">App\\Http\\Controllers\\ProjectMemberController::memberAcceptInvitation<\/a>"],[0,2,"<a href=\"Http\/Controllers\/ProjectMemberController.php.html#132\">App\\Http\\Controllers\\ProjectMemberController::resendInvitation<\/a>"],[0,1,"<a href=\"Http\/Controllers\/RegistrationController.php.html#17\">App\\Http\\Controllers\\RegistrationController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/RegistrationController.php.html#25\">App\\Http\\Controllers\\RegistrationController::index<\/a>"],[0,2,"<a href=\"Http\/Controllers\/RegistrationController.php.html#33\">App\\Http\\Controllers\\RegistrationController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#37\">App\\Http\\Controllers\\UserController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#50\">App\\Http\\Controllers\\UserController::index<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#58\">App\\Http\\Controllers\\UserController::create<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#66\">App\\Http\\Controllers\\UserController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#74\">App\\Http\\Controllers\\UserController::show<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#82\">App\\Http\\Controllers\\UserController::edit<\/a>"],[0,4,"<a href=\"Http\/Controllers\/UserController.php.html#90\">App\\Http\\Controllers\\UserController::update<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#109\">App\\Http\\Controllers\\UserController::destroy<\/a>"],[0,2,"<a href=\"Http\/Controllers\/UserController.php.html#121\">App\\Http\\Controllers\\UserController::accountInviteCreation<\/a>"],[0,2,"<a href=\"Http\/Controllers\/UserController.php.html#140\">App\\Http\\Controllers\\UserController::postAccountInviteCreation<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#168\">App\\Http\\Controllers\\UserController::verificationSend<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#184\">App\\Http\\Controllers\\UserController::verificationNotice<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#193\">App\\Http\\Controllers\\UserController::verificationVerify<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#206\">App\\Http\\Controllers\\UserController::closeVerificationDialog<\/a>"],[0,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#13\">App\\Http\\Middleware\\Authenticate::redirectTo<\/a>"],[0,1,"<a href=\"Http\/Middleware\/ProjectRoleAccessMiddleware.php.html#24\">App\\Http\\Middleware\\ProjectRoleAccessMiddleware::__construct<\/a>"],[0,5,"<a href=\"Http\/Middleware\/ProjectRoleAccessMiddleware.php.html#35\">App\\Http\\Middleware\\ProjectRoleAccessMiddleware::handle<\/a>"],[0,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#18\">App\\Http\\Middleware\\RedirectIfAuthenticated::handle<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#14\">App\\Http\\Middleware\\TrustHosts::hosts<\/a>"],[0,1,"<a href=\"Http\/Requests\/AddMemberRequest.php.html#16\">App\\Http\\Requests\\AddMemberRequest::__construct<\/a>"],[0,1,"<a href=\"Http\/Requests\/AddMemberRequest.php.html#24\">App\\Http\\Requests\\AddMemberRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/AddMemberRequest.php.html#34\">App\\Http\\Requests\\AddMemberRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/Attachment\/UploadAttachmentRequest.php.html#12\">App\\Http\\Requests\\Attachment\\UploadAttachmentRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/Attachment\/UploadAttachmentRequest.php.html#22\">App\\Http\\Requests\\Attachment\\UploadAttachmentRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/Comment\/StoreCommentRequest.php.html#12\">App\\Http\\Requests\\Comment\\StoreCommentRequest::authorize<\/a>"],[91.66666666666666,2,"<a href=\"Http\/Requests\/Comment\/StoreCommentRequest.php.html#22\">App\\Http\\Requests\\Comment\\StoreCommentRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/Comment\/StoreDraftCommentRequest.php.html#12\">App\\Http\\Requests\\Comment\\StoreDraftCommentRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/Comment\/StoreDraftCommentRequest.php.html#22\">App\\Http\\Requests\\Comment\\StoreDraftCommentRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/Comment\/UpdateCommentRequest.php.html#12\">App\\Http\\Requests\\Comment\\UpdateCommentRequest::authorize<\/a>"],[90,2,"<a href=\"Http\/Requests\/Comment\/UpdateCommentRequest.php.html#22\">App\\Http\\Requests\\Comment\\UpdateCommentRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/DeleteMemberRequest.php.html#13\">App\\Http\\Requests\\DeleteMemberRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/DeleteMemberRequest.php.html#23\">App\\Http\\Requests\\DeleteMemberRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/EditMemberRoleRequest.php.html#16\">App\\Http\\Requests\\EditMemberRoleRequest::__construct<\/a>"],[0,1,"<a href=\"Http\/Requests\/EditMemberRoleRequest.php.html#24\">App\\Http\\Requests\\EditMemberRoleRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/EditMemberRoleRequest.php.html#36\">App\\Http\\Requests\\EditMemberRoleRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/InviteAcceptRequest.php.html#12\">App\\Http\\Requests\\InviteAcceptRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/InviteAcceptRequest.php.html#22\">App\\Http\\Requests\\InviteAcceptRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/InviteUserCreateRequest.php.html#12\">App\\Http\\Requests\\InviteUserCreateRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/InviteUserCreateRequest.php.html#22\">App\\Http\\Requests\\InviteUserCreateRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/Issue\/DeleteIssueRequest.php.html#12\">App\\Http\\Requests\\Issue\\DeleteIssueRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/Issue\/DeleteIssueRequest.php.html#22\">App\\Http\\Requests\\Issue\\DeleteIssueRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/Issue\/StoreIssueRequest.php.html#12\">App\\Http\\Requests\\Issue\\StoreIssueRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/Issue\/StoreIssueRequest.php.html#22\">App\\Http\\Requests\\Issue\\StoreIssueRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/Issue\/UpdateIssueRequest.php.html#12\">App\\Http\\Requests\\Issue\\UpdateIssueRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/Issue\/UpdateIssueRequest.php.html#22\">App\\Http\\Requests\\Issue\\UpdateIssueRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/Issue\/UpdateIssueRequest.php.html#44\">App\\Http\\Requests\\Issue\\UpdateIssueRequest::getValidationRules<\/a>"],[0,1,"<a href=\"Http\/Requests\/LoginRequest.php.html#12\">App\\Http\\Requests\\LoginRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/LoginRequest.php.html#22\">App\\Http\\Requests\\LoginRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/PasswordUpdateRequest.php.html#12\">App\\Http\\Requests\\PasswordUpdateRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/PasswordUpdateRequest.php.html#22\">App\\Http\\Requests\\PasswordUpdateRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/PasswordUpdateRequest.php.html#37\">App\\Http\\Requests\\PasswordUpdateRequest::messages<\/a>"],[0,1,"<a href=\"Http\/Requests\/ResetPasswordRequest.php.html#12\">App\\Http\\Requests\\ResetPasswordRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/ResetPasswordRequest.php.html#22\">App\\Http\\Requests\\ResetPasswordRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/ResetPasswordRequest.php.html#29\">App\\Http\\Requests\\ResetPasswordRequest::messages<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreProjectRequest.php.html#12\">App\\Http\\Requests\\StoreProjectRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreProjectRequest.php.html#22\">App\\Http\\Requests\\StoreProjectRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreRegistrationRequest.php.html#12\">App\\Http\\Requests\\StoreRegistrationRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreRegistrationRequest.php.html#17\">App\\Http\\Requests\\StoreRegistrationRequest::messages<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreRegistrationRequest.php.html#29\">App\\Http\\Requests\\StoreRegistrationRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateProjectRequest.php.html#13\">App\\Http\\Requests\\UpdateProjectRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateProjectRequest.php.html#23\">App\\Http\\Requests\\UpdateProjectRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateUserRequest.php.html#13\">App\\Http\\Requests\\UpdateUserRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateUserRequest.php.html#23\">App\\Http\\Requests\\UpdateUserRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UserActiveRequest.php.html#12\">App\\Http\\Requests\\UserActiveRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UserActiveRequest.php.html#22\">App\\Http\\Requests\\UserActiveRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UserActiveRequest.php.html#43\">App\\Http\\Requests\\UserActiveRequest::messages<\/a>"],[0,1,"<a href=\"Mail\/SendEmail.php.html#34\">App\\Mail\\SendEmail::__construct<\/a>"],[0,1,"<a href=\"Mail\/SendEmail.php.html#44\">App\\Mail\\SendEmail::envelope<\/a>"],[0,1,"<a href=\"Mail\/SendEmail.php.html#54\">App\\Mail\\SendEmail::content<\/a>"],[0,1,"<a href=\"Mail\/SendEmail.php.html#67\">App\\Mail\\SendEmail::attachments<\/a>"],[0,1,"<a href=\"Models\/Attachment.php.html#25\">App\\Models\\Attachment::target<\/a>"],[100,1,"<a href=\"Models\/Comment.php.html#25\">App\\Models\\Comment::comments<\/a>"],[100,1,"<a href=\"Models\/Comment.php.html#29\">App\\Models\\Comment::user<\/a>"],[0,1,"<a href=\"Models\/Comment.php.html#34\">App\\Models\\Comment::issue<\/a>"],[0,1,"<a href=\"Models\/Comment.php.html#39\">App\\Models\\Comment::attachments<\/a>"],[0,1,"<a href=\"Models\/History.php.html#23\">App\\Models\\History::issue<\/a>"],[0,1,"<a href=\"Models\/History.php.html#28\">App\\Models\\History::user<\/a>"],[100,1,"<a href=\"Models\/Issue.php.html#43\">App\\Models\\Issue::comments<\/a>"],[0,1,"<a href=\"Models\/Issue.php.html#48\">App\\Models\\Issue::histories<\/a>"],[0,1,"<a href=\"Models\/Issue.php.html#53\">App\\Models\\Issue::issues<\/a>"],[0,1,"<a href=\"Models\/Issue.php.html#58\">App\\Models\\Issue::parent<\/a>"],[100,1,"<a href=\"Models\/Issue.php.html#63\">App\\Models\\Issue::project<\/a>"],[0,1,"<a href=\"Models\/Issue.php.html#68\">App\\Models\\Issue::assignee<\/a>"],[0,1,"<a href=\"Models\/Issue.php.html#73\">App\\Models\\Issue::reporter<\/a>"],[100,1,"<a href=\"Models\/Issue.php.html#78\">App\\Models\\Issue::attachments<\/a>"],[100,1,"<a href=\"Models\/Issue.php.html#83\">App\\Models\\Issue::creator<\/a>"],[0,1,"<a href=\"Models\/Issue.php.html#88\">App\\Models\\Issue::updater<\/a>"],[100,1,"<a href=\"Models\/Project.php.html#27\">App\\Models\\Project::issues<\/a>"],[100,1,"<a href=\"Models\/Project.php.html#32\">App\\Models\\Project::projectMembers<\/a>"],[0,1,"<a href=\"Models\/Project.php.html#37\">App\\Models\\Project::user<\/a>"],[0,1,"<a href=\"Models\/ProjectMember.php.html#27\">App\\Models\\ProjectMember::user<\/a>"],[0,1,"<a href=\"Models\/ProjectMember.php.html#32\">App\\Models\\ProjectMember::project<\/a>"],[0,1,"<a href=\"Models\/ProjectMember.php.html#37\">App\\Models\\ProjectMember::createdBy<\/a>"],[0,1,"<a href=\"Models\/User.php.html#53\">App\\Models\\User::projects<\/a>"],[0,1,"<a href=\"Models\/User.php.html#58\">App\\Models\\User::projectMembers<\/a>"],[0,1,"<a href=\"Models\/User.php.html#63\">App\\Models\\User::assignees<\/a>"],[0,1,"<a href=\"Models\/User.php.html#68\">App\\Models\\User::reporters<\/a>"],[0,1,"<a href=\"Models\/User.php.html#73\">App\\Models\\User::histories<\/a>"],[0,1,"<a href=\"Models\/User.php.html#78\">App\\Models\\User::comments<\/a>"],[0,1,"<a href=\"Models\/User.php.html#83\">App\\Models\\User::issues<\/a>"],[0,1,"<a href=\"Models\/User.php.html#88\">App\\Models\\User::issuesUpdater<\/a>"],[0,1,"<a href=\"Models\/User.php.html#100\">App\\Models\\User::sendPasswordResetNotification<\/a>"],[0,1,"<a href=\"Models\/User.php.html#111\">App\\Models\\User::sendEmailVerificationNotification<\/a>"],[0,1,"<a href=\"Notifications\/ResetPasswordNotification.php.html#21\">App\\Notifications\\ResetPasswordNotification::__construct<\/a>"],[0,1,"<a href=\"Notifications\/ResetPasswordNotification.php.html#33\">App\\Notifications\\ResetPasswordNotification::via<\/a>"],[0,1,"<a href=\"Notifications\/ResetPasswordNotification.php.html#42\">App\\Notifications\\ResetPasswordNotification::toMail<\/a>"],[0,1,"<a href=\"Notifications\/ResetPasswordNotification.php.html#60\">App\\Notifications\\ResetPasswordNotification::toArray<\/a>"],[0,1,"<a href=\"Notifications\/VerifyEmail.php.html#16\">App\\Notifications\\VerifyEmail::toMail<\/a>"],[100,1,"<a href=\"Policies\/IssuePolicy.php.html#16\">App\\Policies\\IssuePolicy::__construct<\/a>"],[0,1,"<a href=\"Policies\/IssuePolicy.php.html#24\">App\\Policies\\IssuePolicy::create<\/a>"],[0,8,"<a href=\"Policies\/IssuePolicy.php.html#34\">App\\Policies\\IssuePolicy::update<\/a>"],[0,1,"<a href=\"Policies\/IssuePolicy.php.html#71\">App\\Policies\\IssuePolicy::delete<\/a>"],[0,1,"<a href=\"Policies\/ProjectMemberPolicy.php.html#15\">App\\Policies\\ProjectMemberPolicy::__construct<\/a>"],[0,1,"<a href=\"Policies\/ProjectMemberPolicy.php.html#22\">App\\Policies\\ProjectMemberPolicy::create<\/a>"],[0,1,"<a href=\"Policies\/ProjectMemberPolicy.php.html#31\">App\\Policies\\ProjectMemberPolicy::update<\/a>"],[0,1,"<a href=\"Policies\/ProjectMemberPolicy.php.html#40\">App\\Policies\\ProjectMemberPolicy::delete<\/a>"],[0,1,"<a href=\"Policies\/ProjectPolicy.php.html#13\">App\\Policies\\ProjectPolicy::update<\/a>"],[0,1,"<a href=\"Policies\/ProjectPolicy.php.html#21\">App\\Policies\\ProjectPolicy::delete<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#16\">App\\Providers\\AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#47\">App\\Providers\\AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/AttachmentServiceProvider.php.html#14\">App\\Providers\\AttachmentServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AttachmentServiceProvider.php.html#25\">App\\Providers\\AttachmentServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#32\">App\\Providers\\AuthServiceProvider::boot<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#13\">App\\Providers\\BroadcastServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#26\">App\\Providers\\EventServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#34\">App\\Providers\\EventServiceProvider::shouldDiscoverEvents<\/a>"],[100,1,"<a href=\"Providers\/HistoryServiceProvider.php.html#12\">App\\Providers\\HistoryServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/HistoryServiceProvider.php.html#23\">App\\Providers\\HistoryServiceProvider::boot<\/a>"],[90,2,"<a href=\"Providers\/RouteServiceProvider.php.html#25\">App\\Providers\\RouteServiceProvider::boot<\/a>"],[30,6,"<a href=\"Providers\/TelescopeServiceProvider.php.html#15\">App\\Providers\\TelescopeServiceProvider::register<\/a>"],[87.5,2,"<a href=\"Providers\/TelescopeServiceProvider.php.html#37\">App\\Providers\\TelescopeServiceProvider::hideSensitiveRequestDetails<\/a>"],[40,1,"<a href=\"Providers\/TelescopeServiceProvider.php.html#57\">App\\Providers\\TelescopeServiceProvider::gate<\/a>"],[100,1,"<a href=\"Repositories\/Attachment\/AttachmentRepository.php.html#11\">App\\Repositories\\Attachment\\AttachmentRepository::getModel<\/a>"],[100,1,"<a href=\"Repositories\/Attachment\/AttachmentRepository.php.html#24\">App\\Repositories\\Attachment\\AttachmentRepository::getAttachmentsByTargetId<\/a>"],[100,1,"<a href=\"Repositories\/BaseRepository.php.html#14\">App\\Repositories\\BaseRepository::__construct<\/a>"],[100,0,"<a href=\"Repositories\/BaseRepository.php.html#24\">App\\Repositories\\BaseRepository::getModel<\/a>"],[100,1,"<a href=\"Repositories\/BaseRepository.php.html#31\">App\\Repositories\\BaseRepository::setModel<\/a>"],[0,1,"<a href=\"Repositories\/BaseRepository.php.html#38\">App\\Repositories\\BaseRepository::getAll<\/a>"],[100,1,"<a href=\"Repositories\/BaseRepository.php.html#50\">App\\Repositories\\BaseRepository::find<\/a>"],[100,1,"<a href=\"Repositories\/BaseRepository.php.html#62\">App\\Repositories\\BaseRepository::create<\/a>"],[0,2,"<a href=\"Repositories\/BaseRepository.php.html#74\">App\\Repositories\\BaseRepository::update<\/a>"],[75,2,"<a href=\"Repositories\/BaseRepository.php.html#89\">App\\Repositories\\BaseRepository::delete<\/a>"],[0,1,"<a href=\"Repositories\/BaseRepository.php.html#105\">App\\Repositories\\BaseRepository::insertGetId<\/a>"],[100,1,"<a href=\"Repositories\/Comment\/CommentRepository.php.html#17\">App\\Repositories\\Comment\\CommentRepository::getModel<\/a>"],[100,1,"<a href=\"Repositories\/Comment\/CommentRepository.php.html#22\">App\\Repositories\\Comment\\CommentRepository::findCommentById<\/a>"],[100,1,"<a href=\"Repositories\/Comment\/CommentRepository.php.html#35\">App\\Repositories\\Comment\\CommentRepository::getCommentsByIssueId<\/a>"],[0,1,"<a href=\"Repositories\/Comment\/CommentRepository.php.html#54\">App\\Repositories\\Comment\\CommentRepository::getCommentsByParentId<\/a>"],[0,1,"<a href=\"Repositories\/Comment\/CommentRepository.php.html#66\">App\\Repositories\\Comment\\CommentRepository::deleteMultipleSubComment<\/a>"],[100,1,"<a href=\"Repositories\/History\/HistoryRepository.php.html#10\">App\\Repositories\\History\\HistoryRepository::getModel<\/a>"],[0,1,"<a href=\"Repositories\/History\/HistoryRepository.php.html#22\">App\\Repositories\\History\\HistoryRepository::getHistoriesByIssue<\/a>"],[100,1,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#11\">App\\Repositories\\Issue\\IssueRepository::getModel<\/a>"],[0,1,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#23\">App\\Repositories\\Issue\\IssueRepository::getIssuesByProjectId<\/a>"],[0,1,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#35\">App\\Repositories\\Issue\\IssueRepository::getIssuesByParentId<\/a>"],[0,1,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#47\">App\\Repositories\\Issue\\IssueRepository::getParentIssuesByProjectId<\/a>"],[0,1,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#59\">App\\Repositories\\Issue\\IssueRepository::getParentIssuesByProjectKey<\/a>"],[0,2,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#73\">App\\Repositories\\Issue\\IssueRepository::getIssueKeyByProjectId<\/a>"],[100,1,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#92\">App\\Repositories\\Issue\\IssueRepository::getIssueByIssueKey<\/a>"],[0,1,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#104\">App\\Repositories\\Issue\\IssueRepository::getIssueDetail<\/a>"],[0,1,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#123\">App\\Repositories\\Issue\\IssueRepository::deleteChildIssuesByParentId<\/a>"],[0,3,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#137\">App\\Repositories\\Issue\\IssueRepository::update<\/a>"],[0,2,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#159\">App\\Repositories\\Issue\\IssueRepository::delete<\/a>"],[0,16,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#173\">App\\Repositories\\Issue\\IssueRepository::filter<\/a>"],[0,3,"<a href=\"Repositories\/Issue\/IssueRepository.php.html#232\">App\\Repositories\\Issue\\IssueRepository::getMilestonesByProject<\/a>"],[100,1,"<a href=\"Repositories\/Project\/ProjectRepository.php.html#15\">App\\Repositories\\Project\\ProjectRepository::getModel<\/a>"],[0,1,"<a href=\"Repositories\/Project\/ProjectRepository.php.html#27\">App\\Repositories\\Project\\ProjectRepository::getProjectsByUserId<\/a>"],[0,1,"<a href=\"Repositories\/Project\/ProjectRepository.php.html#40\">App\\Repositories\\Project\\ProjectRepository::getProjectMembers<\/a>"],[0,1,"<a href=\"Repositories\/Project\/ProjectRepository.php.html#54\">App\\Repositories\\Project\\ProjectRepository::isMemberInProject<\/a>"],[0,3,"<a href=\"Repositories\/Project\/ProjectRepository.php.html#65\">App\\Repositories\\Project\\ProjectRepository::getProjectByKey<\/a>"],[100,1,"<a href=\"Repositories\/ProjectMember\/MemberRepository.php.html#10\">App\\Repositories\\ProjectMember\\MemberRepository::getModel<\/a>"],[0,1,"<a href=\"Repositories\/ProjectMember\/MemberRepository.php.html#22\">App\\Repositories\\ProjectMember\\MemberRepository::getUserRoleID<\/a>"],[0,1,"<a href=\"Repositories\/ProjectMember\/MemberRepository.php.html#34\">App\\Repositories\\ProjectMember\\MemberRepository::getProjectMembers<\/a>"],[100,1,"<a href=\"Repositories\/User\/UserRepository.php.html#10\">App\\Repositories\\User\\UserRepository::getModel<\/a>"],[0,1,"<a href=\"Repositories\/User\/UserRepository.php.html#19\">App\\Repositories\\User\\UserRepository::getUserByEmail<\/a>"],[0,1,"<a href=\"Repositories\/User\/UserRepository.php.html#24\">App\\Repositories\\User\\UserRepository::getEmailByComment<\/a>"],[0,3,"<a href=\"Rules\/CheckAllowAddRole.php.html#16\">App\\Rules\\CheckAllowAddRole::validate<\/a>"],[0,2,"<a href=\"Rules\/CheckAllowDeleteRole.php.html#16\">App\\Rules\\CheckAllowDeleteRole::validate<\/a>"],[0,2,"<a href=\"Rules\/CheckAllowEditRole.php.html#17\">App\\Rules\\CheckAllowEditRole::validate<\/a>"],[100,1,"<a href=\"Services\/AttachmentService.php.html#30\">App\\Services\\AttachmentService::__construct<\/a>"],[100,1,"<a href=\"Services\/AttachmentService.php.html#48\">App\\Services\\AttachmentService::getAttachmentsByTarget<\/a>"],[0,4,"<a href=\"Services\/AttachmentService.php.html#62\">App\\Services\\AttachmentService::changeUserPhoto<\/a>"],[0,4,"<a href=\"Services\/AttachmentService.php.html#88\">App\\Services\\AttachmentService::changeProjectPhoto<\/a>"],[86.20689655172413,4,"<a href=\"Services\/AttachmentService.php.html#115\">App\\Services\\AttachmentService::uploadAttachment<\/a>"],[84,4,"<a href=\"Services\/AttachmentService.php.html#161\">App\\Services\\AttachmentService::deleteAttachment<\/a>"],[77.77777777777779,3,"<a href=\"Services\/AttachmentService.php.html#202\">App\\Services\\AttachmentService::getAttachmentViewUrl<\/a>"],[71.42857142857143,3,"<a href=\"Services\/AttachmentService.php.html#226\">App\\Services\\AttachmentService::downloadAttachment<\/a>"],[100,1,"<a href=\"Services\/CommentService.php.html#36\">App\\Services\\CommentService::__construct<\/a>"],[100,2,"<a href=\"Services\/CommentService.php.html#48\">App\\Services\\CommentService::findCommentById<\/a>"],[100,2,"<a href=\"Services\/CommentService.php.html#65\">App\\Services\\CommentService::getCommentsByIssueId<\/a>"],[100,4,"<a href=\"Services\/CommentService.php.html#82\">App\\Services\\CommentService::updateCommentByUser<\/a>"],[100,5,"<a href=\"Services\/CommentService.php.html#104\">App\\Services\\CommentService::deleteCommentByUse<\/a>"],[83.33333333333334,11,"<a href=\"Services\/CommentService.php.html#136\">App\\Services\\CommentService::notifyForCommentActions<\/a>"],[100,1,"<a href=\"Services\/CommentService.php.html#194\">App\\Services\\CommentService::createDraftComment<\/a>"],[100,1,"<a href=\"Services\/HistoryService.php.html#15\">App\\Services\\HistoryService::__construct<\/a>"],[82.35294117647058,6,"<a href=\"Services\/HistoryService.php.html#30\">App\\Services\\HistoryService::createHistory<\/a>"],[0,1,"<a href=\"Services\/HistoryService.php.html#63\">App\\Services\\HistoryService::getHistoriesByIssue<\/a>"],[100,1,"<a href=\"Services\/IssueService.php.html#15\">App\\Services\\IssueService::__construct<\/a>"],[100,9,"<a href=\"Services\/IssueService.php.html#30\">App\\Services\\IssueService::create<\/a>"],[100,4,"<a href=\"Services\/IssueService.php.html#78\">App\\Services\\IssueService::update<\/a>"],[100,5,"<a href=\"Services\/IssueService.php.html#106\">App\\Services\\IssueService::delete<\/a>"],[100,2,"<a href=\"Services\/IssueService.php.html#139\">App\\Services\\IssueService::find<\/a>"],[100,2,"<a href=\"Services\/IssueService.php.html#156\">App\\Services\\IssueService::getIssuesByProjectId<\/a>"],[100,2,"<a href=\"Services\/IssueService.php.html#173\">App\\Services\\IssueService::getParentIssuesByProjectId<\/a>"],[100,2,"<a href=\"Services\/IssueService.php.html#191\">App\\Services\\IssueService::getParentIssuesByProjectKey<\/a>"],[100,2,"<a href=\"Services\/IssueService.php.html#208\">App\\Services\\IssueService::getIssuesByParentId<\/a>"],[100,2,"<a href=\"Services\/IssueService.php.html#225\">App\\Services\\IssueService::getIssueByIssueKey<\/a>"],[100,2,"<a href=\"Services\/IssueService.php.html#242\">App\\Services\\IssueService::getIssueDetail<\/a>"],[100,2,"<a href=\"Services\/IssueService.php.html#259\">App\\Services\\IssueService::hasIssue<\/a>"],[0,9,"<a href=\"Services\/IssueService.php.html#276\">App\\Services\\IssueService::filter<\/a>"],[100,1,"<a href=\"Services\/IssueService.php.html#316\">App\\Services\\IssueService::getMilestonesByProject<\/a>"],[0,1,"<a href=\"Services\/LoginService.php.html#22\">App\\Services\\LoginService::__construct<\/a>"],[0,1,"<a href=\"Services\/LoginService.php.html#27\">App\\Services\\LoginService::login<\/a>"],[0,1,"<a href=\"Services\/LoginService.php.html#39\">App\\Services\\LoginService::forgotPassword<\/a>"],[0,1,"<a href=\"Services\/LoginService.php.html#51\">App\\Services\\LoginService::updateResetPassword<\/a>"],[100,1,"<a href=\"Services\/MailService.php.html#13\">App\\Services\\MailService::__construct<\/a>"],[0,1,"<a href=\"Services\/MailService.php.html#30\">App\\Services\\MailService::send<\/a>"],[0,5,"<a href=\"Services\/MailService.php.html#42\">App\\Services\\MailService::sendIssueUpdate<\/a>"],[100,1,"<a href=\"Services\/ProjectMemberService.php.html#45\">App\\Services\\ProjectMemberService::__construct<\/a>"],[0,2,"<a href=\"Services\/ProjectMemberService.php.html#64\">App\\Services\\ProjectMemberService::editMemberRole<\/a>"],[0,3,"<a href=\"Services\/ProjectMemberService.php.html#81\">App\\Services\\ProjectMemberService::addNewMemberToProject<\/a>"],[0,2,"<a href=\"Services\/ProjectMemberService.php.html#168\">App\\Services\\ProjectMemberService::resendInvitation<\/a>"],[0,1,"<a href=\"Services\/ProjectMemberService.php.html#217\">App\\Services\\ProjectMemberService::getUserRoleID<\/a>"],[0,1,"<a href=\"Services\/ProjectMemberService.php.html#229\">App\\Services\\ProjectMemberService::isMemberExistInProject<\/a>"],[0,1,"<a href=\"Services\/ProjectMemberService.php.html#243\">App\\Services\\ProjectMemberService::getProjectMembers<\/a>"],[0,1,"<a href=\"Services\/ProjectMemberService.php.html#257\">App\\Services\\ProjectMemberService::getPaginateMembers<\/a>"],[0,3,"<a href=\"Services\/ProjectMemberService.php.html#273\">App\\Services\\ProjectMemberService::memberAcceptInvitation<\/a>"],[0,2,"<a href=\"Services\/ProjectMemberService.php.html#292\">App\\Services\\ProjectMemberService::deleteProjectMember<\/a>"],[100,1,"<a href=\"Services\/ProjectService.php.html#19\">App\\Services\\ProjectService::__construct<\/a>"],[0,2,"<a href=\"Services\/ProjectService.php.html#31\">App\\Services\\ProjectService::create<\/a>"],[0,1,"<a href=\"Services\/ProjectService.php.html#61\">App\\Services\\ProjectService::find<\/a>"],[0,1,"<a href=\"Services\/ProjectService.php.html#73\">App\\Services\\ProjectService::getProjectsByUserId<\/a>"],[0,3,"<a href=\"Services\/ProjectService.php.html#84\">App\\Services\\ProjectService::getProjectByKey<\/a>"],[0,4,"<a href=\"Services\/ProjectService.php.html#107\">App\\Services\\ProjectService::getIssuesByKey<\/a>"],[0,1,"<a href=\"Services\/ProjectService.php.html#137\">App\\Services\\ProjectService::delete<\/a>"],[0,1,"<a href=\"Services\/ProjectService.php.html#150\">App\\Services\\ProjectService::update<\/a>"],[100,1,"<a href=\"Services\/UserService.php.html#22\">App\\Services\\UserService::__construct<\/a>"],[0,1,"<a href=\"Services\/UserService.php.html#35\">App\\Services\\UserService::getUserWithEmail<\/a>"],[0,1,"<a href=\"Services\/UserService.php.html#40\">App\\Services\\UserService::authUser<\/a>"],[0,2,"<a href=\"Services\/UserService.php.html#46\">App\\Services\\UserService::register<\/a>"],[0,1,"<a href=\"Services\/UserService.php.html#70\">App\\Services\\UserService::find<\/a>"],[0,2,"<a href=\"Services\/UserService.php.html#82\">App\\Services\\UserService::update<\/a>"],[0,1,"<a href=\"Services\/UserService.php.html#98\">App\\Services\\UserService::generateNewUserOnInvite<\/a>"],[0,1,"<a href=\"Services\/UserService.php.html#118\">App\\Services\\UserService::setUserActive<\/a>"],[0,1,"<a href=\"Services\/UserService.php.html#132\">App\\Services\\UserService::updateUserAccount<\/a>"],[0,1,"<a href=\"Services\/UserService.php.html#151\">App\\Services\\UserService::isUserInactive<\/a>"],[0,1,"<a href=\"Services\/UserService.php.html#166\">App\\Services\\UserService::getUserByID<\/a>"],[0,1,"<a href=\"Services\/UserService.php.html#176\">App\\Services\\UserService::sendEmailVerificationNotification<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

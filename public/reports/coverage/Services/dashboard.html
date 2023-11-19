@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app/Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css?v=10.1.5" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css?v=10.1.5" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css?v=10.1.5" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Services</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="LoginService.php.html#15">App\Services\LoginService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectService.php.html#12">App\Services\ProjectService</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="UserService.php.html#15">App\Services\UserService</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#23">App\Services\ProjectMemberService</a></td><td class="text-right">3%</td></tr>
+       <tr><td><a href="MailService.php.html#9">App\Services\MailService</a></td><td class="text-right">5%</td></tr>
+       <tr><td><a href="AttachmentService.php.html#11">App\Services\AttachmentService</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="HistoryService.php.html#8">App\Services\HistoryService</a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="IssueService.php.html#10">App\Services\IssueService</a></td><td class="text-right">80%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ProjectMemberService.php.html#23">App\Services\ProjectMemberService</a></td><td class="text-right">278</td></tr>
+       <tr><td><a href="ProjectService.php.html#12">App\Services\ProjectService</a></td><td class="text-right">194</td></tr>
+       <tr><td><a href="UserService.php.html#15">App\Services\UserService</a></td><td class="text-right">194</td></tr>
+       <tr><td><a href="IssueService.php.html#10">App\Services\IssueService</a></td><td class="text-right">59</td></tr>
+       <tr><td><a href="MailService.php.html#9">App\Services\MailService</a></td><td class="text-right">49</td></tr>
+       <tr><td><a href="AttachmentService.php.html#11">App\Services\AttachmentService</a></td><td class="text-right">46</td></tr>
+       <tr><td><a href="HistoryService.php.html#8">App\Services\HistoryService</a></td><td class="text-right">8</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AttachmentService.php.html#62"><abbr title="App\Services\AttachmentService::changeUserPhoto">changeUserPhoto</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AttachmentService.php.html#88"><abbr title="App\Services\AttachmentService::changeProjectPhoto">changeProjectPhoto</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HistoryService.php.html#63"><abbr title="App\Services\HistoryService::getHistoriesByIssue">getHistoriesByIssue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IssueService.php.html#276"><abbr title="App\Services\IssueService::filter">filter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginService.php.html#22"><abbr title="App\Services\LoginService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginService.php.html#27"><abbr title="App\Services\LoginService::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginService.php.html#39"><abbr title="App\Services\LoginService::forgotPassword">forgotPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginService.php.html#51"><abbr title="App\Services\LoginService::updateResetPassword">updateResetPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MailService.php.html#30"><abbr title="App\Services\MailService::send">send</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MailService.php.html#42"><abbr title="App\Services\MailService::sendIssueUpdate">sendIssueUpdate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#64"><abbr title="App\Services\ProjectMemberService::editMemberRole">editMemberRole</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#81"><abbr title="App\Services\ProjectMemberService::addNewMemberToProject">addNewMemberToProject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#168"><abbr title="App\Services\ProjectMemberService::resendInvitation">resendInvitation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#217"><abbr title="App\Services\ProjectMemberService::getUserRoleID">getUserRoleID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#229"><abbr title="App\Services\ProjectMemberService::isMemberExistInProject">isMemberExistInProject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#243"><abbr title="App\Services\ProjectMemberService::getProjectMembers">getProjectMembers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#257"><abbr title="App\Services\ProjectMemberService::getPaginateMembers">getPaginateMembers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#273"><abbr title="App\Services\ProjectMemberService::memberAcceptInvitation">memberAcceptInvitation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#292"><abbr title="App\Services\ProjectMemberService::deleteProjectMember">deleteProjectMember</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectService.php.html#31"><abbr title="App\Services\ProjectService::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectService.php.html#61"><abbr title="App\Services\ProjectService::find">find</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectService.php.html#73"><abbr title="App\Services\ProjectService::getProjectsByUserId">getProjectsByUserId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectService.php.html#84"><abbr title="App\Services\ProjectService::getProjectByKey">getProjectByKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectService.php.html#107"><abbr title="App\Services\ProjectService::getIssuesByKey">getIssuesByKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectService.php.html#137"><abbr title="App\Services\ProjectService::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProjectService.php.html#150"><abbr title="App\Services\ProjectService::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserService.php.html#35"><abbr title="App\Services\UserService::getUserWithEmail">getUserWithEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserService.php.html#40"><abbr title="App\Services\UserService::authUser">authUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserService.php.html#46"><abbr title="App\Services\UserService::register">register</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserService.php.html#70"><abbr title="App\Services\UserService::find">find</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserService.php.html#82"><abbr title="App\Services\UserService::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserService.php.html#98"><abbr title="App\Services\UserService::generateNewUserOnInvite">generateNewUserOnInvite</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserService.php.html#118"><abbr title="App\Services\UserService::setUserActive">setUserActive</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserService.php.html#132"><abbr title="App\Services\UserService::updateUserAccount">updateUserAccount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserService.php.html#151"><abbr title="App\Services\UserService::isUserInactive">isUserInactive</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserService.php.html#166"><abbr title="App\Services\UserService::getUserByID">getUserByID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserService.php.html#176"><abbr title="App\Services\UserService::sendEmailVerificationNotification">sendEmailVerificationNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AttachmentService.php.html#226"><abbr title="App\Services\AttachmentService::downloadAttachment">downloadAttachment</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="AttachmentService.php.html#202"><abbr title="App\Services\AttachmentService::getAttachmentViewUrl">getAttachmentViewUrl</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="HistoryService.php.html#30"><abbr title="App\Services\HistoryService::createHistory">createHistory</abbr></a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="CommentService.php.html#136"><abbr title="App\Services\CommentService::notifyForCommentActions">notifyForCommentActions</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="AttachmentService.php.html#161"><abbr title="App\Services\AttachmentService::deleteAttachment">deleteAttachment</abbr></a></td><td class="text-right">84%</td></tr>
+       <tr><td><a href="AttachmentService.php.html#115"><abbr title="App\Services\AttachmentService::uploadAttachment">uploadAttachment</abbr></a></td><td class="text-right">86%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="IssueService.php.html#276"><abbr title="App\Services\IssueService::filter">filter</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="MailService.php.html#42"><abbr title="App\Services\MailService::sendIssueUpdate">sendIssueUpdate</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="AttachmentService.php.html#62"><abbr title="App\Services\AttachmentService::changeUserPhoto">changeUserPhoto</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="AttachmentService.php.html#88"><abbr title="App\Services\AttachmentService::changeProjectPhoto">changeProjectPhoto</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ProjectService.php.html#107"><abbr title="App\Services\ProjectService::getIssuesByKey">getIssuesByKey</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#81"><abbr title="App\Services\ProjectMemberService::addNewMemberToProject">addNewMemberToProject</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#273"><abbr title="App\Services\ProjectMemberService::memberAcceptInvitation">memberAcceptInvitation</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ProjectService.php.html#84"><abbr title="App\Services\ProjectService::getProjectByKey">getProjectByKey</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CommentService.php.html#136"><abbr title="App\Services\CommentService::notifyForCommentActions">notifyForCommentActions</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="HistoryService.php.html#30"><abbr title="App\Services\HistoryService::createHistory">createHistory</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#64"><abbr title="App\Services\ProjectMemberService::editMemberRole">editMemberRole</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#168"><abbr title="App\Services\ProjectMemberService::resendInvitation">resendInvitation</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ProjectMemberService.php.html#292"><abbr title="App\Services\ProjectMemberService::deleteProjectMember">deleteProjectMember</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ProjectService.php.html#31"><abbr title="App\Services\ProjectService::create">create</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UserService.php.html#46"><abbr title="App\Services\UserService::register">register</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UserService.php.html#82"><abbr title="App\Services\UserService::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AttachmentService.php.html#161"><abbr title="App\Services\AttachmentService::deleteAttachment">deleteAttachment</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="AttachmentService.php.html#115"><abbr title="App\Services\AttachmentService::uploadAttachment">uploadAttachment</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="AttachmentService.php.html#226"><abbr title="App\Services\AttachmentService::downloadAttachment">downloadAttachment</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="AttachmentService.php.html#202"><abbr title="App\Services\AttachmentService::getAttachmentViewUrl">getAttachmentViewUrl</abbr></a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 10.1.5</a> using <a href="https://www.php.net/" target="_top">PHP 8.2.12</a> and <a href="https://phpunit.de/">PHPUnit 10.3.5</a> at Mon Nov 13 4:29:19 UTC 2023.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js?v=10.1.5" type="text/javascript"></script>
+  <script src="../_js/d3.min.js?v=10.1.5" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js?v=10.1.5" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([1,4,0,0,0,0,0,1,1,1,1,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([37,0,0,0,0,0,0,0,2,4,0,26], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[66.3157894736842,24,"<a href=\"AttachmentService.php.html#11\">App\\Services\\AttachmentService<\/a>"],[92.85714285714286,26,"<a href=\"CommentService.php.html#19\">App\\Services\\CommentService<\/a>"],[78.94736842105263,8,"<a href=\"HistoryService.php.html#8\">App\\Services\\HistoryService<\/a>"],[80.7017543859649,45,"<a href=\"IssueService.php.html#10\">App\\Services\\IssueService<\/a>"],[0,4,"<a href=\"LoginService.php.html#15\">App\\Services\\LoginService<\/a>"],[5,7,"<a href=\"MailService.php.html#9\">App\\Services\\MailService<\/a>"],[3.225806451612903,17,"<a href=\"ProjectMemberService.php.html#23\">App\\Services\\ProjectMemberService<\/a>"],[2.631578947368421,14,"<a href=\"ProjectService.php.html#12\">App\\Services\\ProjectService<\/a>"],[2.631578947368421,14,"<a href=\"UserService.php.html#15\">App\\Services\\UserService<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"AttachmentService.php.html#30\">App\\Services\\AttachmentService::__construct<\/a>"],[100,1,"<a href=\"AttachmentService.php.html#48\">App\\Services\\AttachmentService::getAttachmentsByTarget<\/a>"],[0,4,"<a href=\"AttachmentService.php.html#62\">App\\Services\\AttachmentService::changeUserPhoto<\/a>"],[0,4,"<a href=\"AttachmentService.php.html#88\">App\\Services\\AttachmentService::changeProjectPhoto<\/a>"],[86.20689655172413,4,"<a href=\"AttachmentService.php.html#115\">App\\Services\\AttachmentService::uploadAttachment<\/a>"],[84,4,"<a href=\"AttachmentService.php.html#161\">App\\Services\\AttachmentService::deleteAttachment<\/a>"],[77.77777777777779,3,"<a href=\"AttachmentService.php.html#202\">App\\Services\\AttachmentService::getAttachmentViewUrl<\/a>"],[71.42857142857143,3,"<a href=\"AttachmentService.php.html#226\">App\\Services\\AttachmentService::downloadAttachment<\/a>"],[100,1,"<a href=\"CommentService.php.html#36\">App\\Services\\CommentService::__construct<\/a>"],[100,2,"<a href=\"CommentService.php.html#48\">App\\Services\\CommentService::findCommentById<\/a>"],[100,2,"<a href=\"CommentService.php.html#65\">App\\Services\\CommentService::getCommentsByIssueId<\/a>"],[100,4,"<a href=\"CommentService.php.html#82\">App\\Services\\CommentService::updateCommentByUser<\/a>"],[100,5,"<a href=\"CommentService.php.html#104\">App\\Services\\CommentService::deleteCommentByUse<\/a>"],[83.33333333333334,11,"<a href=\"CommentService.php.html#136\">App\\Services\\CommentService::notifyForCommentActions<\/a>"],[100,1,"<a href=\"CommentService.php.html#194\">App\\Services\\CommentService::createDraftComment<\/a>"],[100,1,"<a href=\"HistoryService.php.html#15\">App\\Services\\HistoryService::__construct<\/a>"],[82.35294117647058,6,"<a href=\"HistoryService.php.html#30\">App\\Services\\HistoryService::createHistory<\/a>"],[0,1,"<a href=\"HistoryService.php.html#63\">App\\Services\\HistoryService::getHistoriesByIssue<\/a>"],[100,1,"<a href=\"IssueService.php.html#15\">App\\Services\\IssueService::__construct<\/a>"],[100,9,"<a href=\"IssueService.php.html#30\">App\\Services\\IssueService::create<\/a>"],[100,4,"<a href=\"IssueService.php.html#78\">App\\Services\\IssueService::update<\/a>"],[100,5,"<a href=\"IssueService.php.html#106\">App\\Services\\IssueService::delete<\/a>"],[100,2,"<a href=\"IssueService.php.html#139\">App\\Services\\IssueService::find<\/a>"],[100,2,"<a href=\"IssueService.php.html#156\">App\\Services\\IssueService::getIssuesByProjectId<\/a>"],[100,2,"<a href=\"IssueService.php.html#173\">App\\Services\\IssueService::getParentIssuesByProjectId<\/a>"],[100,2,"<a href=\"IssueService.php.html#191\">App\\Services\\IssueService::getParentIssuesByProjectKey<\/a>"],[100,2,"<a href=\"IssueService.php.html#208\">App\\Services\\IssueService::getIssuesByParentId<\/a>"],[100,2,"<a href=\"IssueService.php.html#225\">App\\Services\\IssueService::getIssueByIssueKey<\/a>"],[100,2,"<a href=\"IssueService.php.html#242\">App\\Services\\IssueService::getIssueDetail<\/a>"],[100,2,"<a href=\"IssueService.php.html#259\">App\\Services\\IssueService::hasIssue<\/a>"],[0,9,"<a href=\"IssueService.php.html#276\">App\\Services\\IssueService::filter<\/a>"],[100,1,"<a href=\"IssueService.php.html#316\">App\\Services\\IssueService::getMilestonesByProject<\/a>"],[0,1,"<a href=\"LoginService.php.html#22\">App\\Services\\LoginService::__construct<\/a>"],[0,1,"<a href=\"LoginService.php.html#27\">App\\Services\\LoginService::login<\/a>"],[0,1,"<a href=\"LoginService.php.html#39\">App\\Services\\LoginService::forgotPassword<\/a>"],[0,1,"<a href=\"LoginService.php.html#51\">App\\Services\\LoginService::updateResetPassword<\/a>"],[100,1,"<a href=\"MailService.php.html#13\">App\\Services\\MailService::__construct<\/a>"],[0,1,"<a href=\"MailService.php.html#30\">App\\Services\\MailService::send<\/a>"],[0,5,"<a href=\"MailService.php.html#42\">App\\Services\\MailService::sendIssueUpdate<\/a>"],[100,1,"<a href=\"ProjectMemberService.php.html#45\">App\\Services\\ProjectMemberService::__construct<\/a>"],[0,2,"<a href=\"ProjectMemberService.php.html#64\">App\\Services\\ProjectMemberService::editMemberRole<\/a>"],[0,3,"<a href=\"ProjectMemberService.php.html#81\">App\\Services\\ProjectMemberService::addNewMemberToProject<\/a>"],[0,2,"<a href=\"ProjectMemberService.php.html#168\">App\\Services\\ProjectMemberService::resendInvitation<\/a>"],[0,1,"<a href=\"ProjectMemberService.php.html#217\">App\\Services\\ProjectMemberService::getUserRoleID<\/a>"],[0,1,"<a href=\"ProjectMemberService.php.html#229\">App\\Services\\ProjectMemberService::isMemberExistInProject<\/a>"],[0,1,"<a href=\"ProjectMemberService.php.html#243\">App\\Services\\ProjectMemberService::getProjectMembers<\/a>"],[0,1,"<a href=\"ProjectMemberService.php.html#257\">App\\Services\\ProjectMemberService::getPaginateMembers<\/a>"],[0,3,"<a href=\"ProjectMemberService.php.html#273\">App\\Services\\ProjectMemberService::memberAcceptInvitation<\/a>"],[0,2,"<a href=\"ProjectMemberService.php.html#292\">App\\Services\\ProjectMemberService::deleteProjectMember<\/a>"],[100,1,"<a href=\"ProjectService.php.html#19\">App\\Services\\ProjectService::__construct<\/a>"],[0,2,"<a href=\"ProjectService.php.html#31\">App\\Services\\ProjectService::create<\/a>"],[0,1,"<a href=\"ProjectService.php.html#61\">App\\Services\\ProjectService::find<\/a>"],[0,1,"<a href=\"ProjectService.php.html#73\">App\\Services\\ProjectService::getProjectsByUserId<\/a>"],[0,3,"<a href=\"ProjectService.php.html#84\">App\\Services\\ProjectService::getProjectByKey<\/a>"],[0,4,"<a href=\"ProjectService.php.html#107\">App\\Services\\ProjectService::getIssuesByKey<\/a>"],[0,1,"<a href=\"ProjectService.php.html#137\">App\\Services\\ProjectService::delete<\/a>"],[0,1,"<a href=\"ProjectService.php.html#150\">App\\Services\\ProjectService::update<\/a>"],[100,1,"<a href=\"UserService.php.html#22\">App\\Services\\UserService::__construct<\/a>"],[0,1,"<a href=\"UserService.php.html#35\">App\\Services\\UserService::getUserWithEmail<\/a>"],[0,1,"<a href=\"UserService.php.html#40\">App\\Services\\UserService::authUser<\/a>"],[0,2,"<a href=\"UserService.php.html#46\">App\\Services\\UserService::register<\/a>"],[0,1,"<a href=\"UserService.php.html#70\">App\\Services\\UserService::find<\/a>"],[0,2,"<a href=\"UserService.php.html#82\">App\\Services\\UserService::update<\/a>"],[0,1,"<a href=\"UserService.php.html#98\">App\\Services\\UserService::generateNewUserOnInvite<\/a>"],[0,1,"<a href=\"UserService.php.html#118\">App\\Services\\UserService::setUserActive<\/a>"],[0,1,"<a href=\"UserService.php.html#132\">App\\Services\\UserService::updateUserAccount<\/a>"],[0,1,"<a href=\"UserService.php.html#151\">App\\Services\\UserService::isUserInactive<\/a>"],[0,1,"<a href=\"UserService.php.html#166\">App\\Services\\UserService::getUserByID<\/a>"],[0,1,"<a href=\"UserService.php.html#176\">App\\Services\\UserService::sendEmailVerificationNotification<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

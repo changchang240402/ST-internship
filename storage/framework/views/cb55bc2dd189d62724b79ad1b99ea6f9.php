@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
+    </script>
+
+    <?php echo app('Illuminate\Foundation\Vite')([
+        'resources/css/app.css',
+        'resources/css/app.css',
+        'resources/js/app.js'
+    ]); ?>
+    <link rel="stylesheet" href="<?php echo e(asset('assets/theme.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('assets/feather.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('assets/bootstrap-select.min.css')); ?>">
+    <script src="<?php echo e(asset('assets/bootstrap-select.js')); ?>" type="module"></script>
+    <script src="<?php echo e(asset('assets/bootstrap-notify.js')); ?>" type="module"></script>
+    <title>Dashboard | Geeks</title>
+
+    <?php echo $__env->yieldContent('extraHeadResources'); ?>
+</head>
+
+
+<body>
+    <?php if(Session::has('message')): ?>
+        <script type="module">
+            notify("<?php echo e(Session::get('message')); ?>", "primary");
+        </script>
+    <?php endif; ?>
+
+    <?php if(Session::has('notify_error')): ?>
+        <script type="module">
+            notify("<?php echo e(Session::get('notify_error')); ?>", "danger");
+        </script>
+    <?php endif; ?>
+
+    <!-- Page content -->
+    <main>
+        <section class="container d-flex flex-column">
+            <div class="row align-items-center justify-content-center g-0 min-vh-100">
+                <div class="col-lg-5 col-md-8 py-8 py-xl-0">
+                    <!-- Card -->
+                    <div class="card shadow ">
+                        <!-- Card body -->
+                        <div class="card-body p-6">
+                            <div class="mb-4">
+                                <h1 class="mb-1 fw-bold">Sign in</h1>
+                                <span>Don’t have an account? <a href="<?php echo e(route('registration.index')); ?>" class="ms-1">Sign up</a></span>
+                            </div>
+                            <!-- Alert -->
+                            <?php if(Session::has('alert')): ?>
+                            <p class="alert alert-danger"><?php echo e(Session::get('alert')); ?></p>
+                            <?php endif; ?>
+
+                            <!-- Form -->
+                            <form method="POST" action="<?php echo e(route('login.store')); ?>">
+                                <?php echo csrf_field(); ?>
+                                <!-- Email -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" class="form-control <?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>" name="email"
+                                        placeholder="Email address here" value="<?php echo e(old('email')); ?>">
+                                    <?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                    <div class="invalid-feedback">
+                                        <?php echo e($message); ?>
+
+                                    </div>
+                                    <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                                </div>
+                                <!-- Password -->
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" id="password" class="form-control <?php $__errorArgs = ['password'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>" name="password"
+                                        placeholder="**************">
+                                    <?php $__errorArgs = ['password'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                    <div class="invalid-feedback">
+                                        <?php echo e($message); ?>
+
+                                    </div>
+                                    <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                                </div>
+                                <!-- Checkbox -->
+                                <div class="d-lg-flex justify-content-between align-items-center mb-4">
+                                    <div>
+                                        <a href="<?php echo e(route('password.forgot')); ?>">Forgot your password?</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <!-- Button -->
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary">Sign in</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function notify(message, type) {
+            $.notify({
+                message: message
+            },{
+                type: type
+            });
+        }
+    </script>
+</body>
+
+</html>
+<?php /**PATH /var/www/html/resources/views/login/index.blade.php ENDPATH**/ ?>
